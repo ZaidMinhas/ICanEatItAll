@@ -14,5 +14,8 @@ public class Character : MonoBehaviour
     //The bigger it gets
     //The less it eats the smaller it gets
 
+    public void Start()
+    {
+    }
 
 }
