@@ -24,4 +24,9 @@ public class EdibleItem : MonoBehaviour
             myOutline.OutlineMode = Outline.Mode.OutlineHidden;
         }
     }
+
+    internal void ChangeOutlineColor(Color newColor)
+    {
+        myOutline.OutlineColor = newColor;
+    }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerPickupRay : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class PlayerPickupRay : MonoBehaviour
     public float maxPickupDistance = 2.0f;
     
     public bool canInteract = false;
-
+    public GameObject lastEdibleGameObject = null;
     private EdibleItem lastEdibleEntity = null;
 
 
@@ -18,7 +19,6 @@ public class PlayerPickupRay : MonoBehaviour
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             
             if (Physics.Raycast(ray, out hit, maxPickupDistance)) {
-
                 EdibleItem edibleEntity = hit.collider.gameObject.GetComponent<EdibleItem>();
                 // Edible entity sighted
                 if (edibleEntity != null)
@@ -27,7 +27,9 @@ public class PlayerPickupRay : MonoBehaviour
                     if (edibleEntity != lastEdibleEntity || lastEdibleEntity.myOutline.OutlineMode == Outline.Mode.OutlineHidden)
                     {
                         lastEdibleEntity = edibleEntity;
+                        lastEdibleGameObject = hit.collider.gameObject;
                         edibleEntity.ToggleOutline(true);
+
                         canInteract = true;
                     }
                 }
@@ -49,4 +51,15 @@ public class PlayerPickupRay : MonoBehaviour
             }
         }
     }
+
+    // public void OnInteract(InputAction.CallbackContext context)
+    // {
+    //     print("Interact");
+    //     if (canInteract)
+    //     {
+    //         // Eat edible entity
+    //         Destroy(lastEdibleGameObject);
+    //         print("Destroy" + lastEdibleGameObject.name);
+    //     }
+    // }
 }
