@@ -9,7 +9,7 @@ public class NPCMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        AssignClosestTarget();
+        FindClosestTarget();
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class NPCMovement : MonoBehaviour
         
     }
 
-    void AssignClosestTarget()
+    void FindClosestTarget()
     {
         
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
