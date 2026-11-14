@@ -67,5 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "ICanEatItAll.slnx"
+    "dotnet.defaultSolution": "ICanEatItAll.slnx",
+    "dotnet.preferCSharpExtension": true
 }
