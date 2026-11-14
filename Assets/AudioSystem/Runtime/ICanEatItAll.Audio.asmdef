@@ -1,0 +1,6 @@
+{
+    "name": "ICanEatItAll.Audio",
+    "rootNamespace": "ICanEatItAll.Audio",
+    "references": ["Unity.InputSystem"],
+    "autoReferenced": true
+}
