@@ -70,6 +70,7 @@ public class HungerMeter : MonoBehaviour
         growthRate = alreadyGrowing ? Mathf.Max(growthRate, item.growthRate) : item.growthRate;
         setState(HungerState.Growing);
         GameSounds.Play("Grow");
+        Debug.Log("Eating " + item.name);
         return true;
     }
 
