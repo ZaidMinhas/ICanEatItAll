@@ -32,6 +32,7 @@ public class GameOverScreen : MonoBehaviour
             {
                 renderer.cull = false;
             }
+            Time.timeScale = 0;
         }
     }
 }
