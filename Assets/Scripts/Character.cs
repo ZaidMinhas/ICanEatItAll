@@ -34,8 +34,6 @@ public class Character : MonoBehaviour
         ChangeSize(hungerMeter.Level);
     }
 
-
-
     public void ChangeSize(float level)
     {
         float scale = MIN_SCALE + (DEFAULT_SCALE - MIN_SCALE) * level;
