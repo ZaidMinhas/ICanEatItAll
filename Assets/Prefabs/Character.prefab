@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   hungerMeter: {fileID: 606356732046151684}
+  viewCamera: {fileID: 0}
   DEFAULT_RAY_DISTANCE: 4
   MIN_RAY_DISTANCE: 2
 --- !u!1 &7979970228853009855
@@ -61,7 +62,7 @@ GameObject:
   - component: {fileID: 7805274918062641901}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

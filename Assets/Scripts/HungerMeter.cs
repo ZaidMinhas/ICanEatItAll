@@ -140,4 +140,9 @@ public class HungerMeter : MonoBehaviour
     {
         return !float.IsNaN(value) && !float.IsInfinity(value);
     }
+
+    public int GetIntLevel()
+    {
+        return IntLevel;
+    }
 }
