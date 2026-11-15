@@ -1,5 +1,7 @@
-using System;
+// using System;
+// using StarterAssets;
 using UnityEngine;
+// using UnityEngine.Events;
 
 public class Character : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class Character : MonoBehaviour
     public float DEFAULT_SCALE = 1.8f;
     public Transform player;
 
+    // public UnityEvent<GameStatus> stateChanged;
+    // private GameState gameState;
+
     void Awake()
     {
         if (hungerMeter == null) hungerMeter = GetComponent<HungerMeter>();
@@ -17,6 +22,10 @@ public class Character : MonoBehaviour
             Debug.LogError("Character requires a HungerMeter and an assigned player Transform.", this);
             enabled = false;
         }
+        
+        // gameState = FindAnyObjectByType<GameState>();
+        // stateChanged = gameState.onStateChanged;
+        // stateChanged.AddListener(OnStateChange);
     }
 
     void OnEnable()
@@ -48,6 +57,15 @@ public class Character : MonoBehaviour
         float scale = MIN_SCALE + (DEFAULT_SCALE - MIN_SCALE) * level;
         if (player != null) player.localScale = Vector3.one * scale;
     }
+
+    // public void OnStateChange(GameStatus gameStatus)
+    // {
+    //     FirstPersonController firstPersonController = GetComponentInChildren<FirstPersonController>();
+    //     if (gameStatus == GameStatus.Lost)
+    //     {
+    //         firstPersonController.canMove = false;
+    //     }
+    // }
 
     public HungerMeter GetHungerMeter()
     {
