@@ -60,9 +60,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3339943105687045404}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071071, z: -0, w: 0.7071065}
-  m_LocalPosition: {x: -0.3104992, y: 0.272, z: -1.4335022}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -1.1557152, y: 0, z: -2.0600057}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8152368682174565247}
@@ -70,7 +70,7 @@ Transform:
   - {fileID: 3186614423715083559}
   - {fileID: 6242164434111837419}
   - {fileID: 4172502509268443118}
-  m_Father: {fileID: 3791869511983946479}
+  m_Father: {fileID: 4519810682466757862}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &3354211656139597518
 GameObject:
@@ -106,6 +106,7 @@ Transform:
   - {fileID: 3652292490577359143}
   - {fileID: 2149545025826524584}
   - {fileID: 7757983249102787762}
+  - {fileID: 7064080366632100433}
   m_Father: {fileID: 3791869511983946479}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &4169289026179613029
@@ -313,7 +314,6 @@ Transform:
   - {fileID: 6653078898096287590}
   - {fileID: 823072632514744325}
   - {fileID: 4519810682466757862}
-  - {fileID: 7064080366632100433}
   - {fileID: 2600428229402025318}
   - {fileID: 5627378905164881270}
   - {fileID: 2980898026121417189}
@@ -906,7 +906,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9cc33d25cde70b54ba952f50c73663c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.582
+      value: -0.421
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9cc33d25cde70b54ba952f50c73663c7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -914,7 +914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9cc33d25cde70b54ba952f50c73663c7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.519
+      value: -0.497
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9cc33d25cde70b54ba952f50c73663c7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -998,6 +998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 2
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -1531,8 +1532,81 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cbc2275abe86cbe46b898c008fa05d8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7123105781490860118}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cbc2275abe86cbe46b898c008fa05d8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6633707094970276654}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cbc2275abe86cbe46b898c008fa05d8c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3550029952330993338}
   m_SourcePrefab: {fileID: 100100000, guid: cbc2275abe86cbe46b898c008fa05d8c, type: 3}
+--- !u!1 &2566159869280165330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cbc2275abe86cbe46b898c008fa05d8c, type: 3}
+  m_PrefabInstance: {fileID: 3413092037506080899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7123105781490860118
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566159869280165330}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8691780276856062721, guid: cbc2275abe86cbe46b898c008fa05d8c, type: 3}
+--- !u!114 &6633707094970276654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566159869280165330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &3550029952330993338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2566159869280165330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 0
+  parent_count: 1
+  usesOutline: 1
+  requirement: 0
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
 --- !u!4 &2942825702879053672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cbc2275abe86cbe46b898c008fa05d8c, type: 3}
@@ -2078,7 +2152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e577fa2ccfb6a43498742bd4c5a571dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.474
+      value: -0.506
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e577fa2ccfb6a43498742bd4c5a571dc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2086,7 +2160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e577fa2ccfb6a43498742bd4c5a571dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.502
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e577fa2ccfb6a43498742bd4c5a571dc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2179,6 +2253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 2
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -2329,6 +2404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -3021,6 +3097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 2
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -3166,6 +3243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 2
   usesOutline: 1
   requirement: 0
   nourishment: 0.05

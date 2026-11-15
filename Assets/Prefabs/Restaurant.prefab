@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -870,6 +871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -1323,6 +1325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -2124,6 +2127,17 @@ Transform:
   - {fileID: 6285536834612814134}
   - {fileID: 7018796339649341126}
   - {fileID: 2524285185778070931}
+  - {fileID: 137894615803833715}
+  - {fileID: 2216150395149428919}
+  - {fileID: 485049619194037079}
+  - {fileID: 4567951132292099623}
+  - {fileID: 8588229208248725786}
+  - {fileID: 5406683635814421770}
+  - {fileID: 965131581113503323}
+  - {fileID: 2760449981638980237}
+  - {fileID: 4991265991397853999}
+  - {fileID: 2935057395428347523}
+  - {fileID: 3010437486355304504}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4817745497875158909
@@ -3454,6 +3468,8 @@ GameObject:
   - component: {fileID: 7443175225105199414}
   - component: {fileID: 9214821011878537691}
   - component: {fileID: 7343086789204153484}
+  - component: {fileID: 6824084148845941299}
+  - component: {fileID: 3198584608105210067}
   m_Layer: 0
   m_Name: Quad (3)
   m_TagString: Untagged
@@ -3555,6 +3571,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6824084148845941299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670676855327383127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &3198584608105210067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670676855327383127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  parent_count: 2
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 1
+  myOutline: {fileID: 0}
 --- !u!1 &1688529268854018441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,6 +3802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -3900,6 +3954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -4571,6 +4626,8 @@ GameObject:
   - component: {fileID: 2555916590865907169}
   - component: {fileID: 2055453050794350309}
   - component: {fileID: 3533989729936558810}
+  - component: {fileID: 381782703257734680}
+  - component: {fileID: 4562866660881460025}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -4672,6 +4729,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &381782703257734680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103637292878298664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &4562866660881460025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103637292878298664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  parent_count: 2
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 1
+  myOutline: {fileID: 0}
 --- !u!1 &2115944561449997961
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,6 +5017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -5615,6 +5710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 0
   nourishment: 1
@@ -5983,6 +6079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -6804,6 +6901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -7095,6 +7193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -7404,6 +7503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -8746,6 +8846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -8875,6 +8976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -10781,6 +10883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -11035,6 +11138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -11208,6 +11312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -11716,6 +11821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -12464,6 +12570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -12900,6 +13007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -13300,6 +13408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -13979,6 +14088,8 @@ GameObject:
   - component: {fileID: 6395376974786926200}
   - component: {fileID: 786199284968719416}
   - component: {fileID: 5813698102562188068}
+  - component: {fileID: 7534171526466220562}
+  - component: {fileID: 5539536411503775618}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -14080,6 +14191,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7534171526466220562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047087224567240044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &5539536411503775618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047087224567240044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  parent_count: 2
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 1
+  myOutline: {fileID: 0}
 --- !u!1 &6080690077702560430
 GameObject:
   m_ObjectHideFlags: 0
@@ -15059,6 +15207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -15278,6 +15427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -16633,6 +16783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -17032,6 +17183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -17332,6 +17484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -17588,6 +17741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -18459,6 +18613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -18610,6 +18765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -18873,6 +19029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -18980,6 +19137,8 @@ GameObject:
   - component: {fileID: 1506002727459659093}
   - component: {fileID: 4553936534507578071}
   - component: {fileID: 6562521656367847087}
+  - component: {fileID: 2458586607415320589}
+  - component: {fileID: 554596252932007793}
   m_Layer: 0
   m_Name: Quad (2)
   m_TagString: Untagged
@@ -19081,6 +19240,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2458586607415320589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8763628771671173408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &554596252932007793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8763628771671173408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  parent_count: 2
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 1
+  myOutline: {fileID: 0}
 --- !u!1 &8792457784308934383
 GameObject:
   m_ObjectHideFlags: 0
@@ -19093,6 +19289,8 @@ GameObject:
   - component: {fileID: 4414582686371781513}
   - component: {fileID: 3353888046300471402}
   - component: {fileID: 3473597751794039964}
+  - component: {fileID: 7551746521788805587}
+  - component: {fileID: 5832037950765829995}
   m_Layer: 0
   m_Name: Quad (4)
   m_TagString: Untagged
@@ -19194,6 +19392,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &7551746521788805587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8792457784308934383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outline
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &5832037950765829995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8792457784308934383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  parent_count: 2
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 1
+  myOutline: {fileID: 0}
 --- !u!1 &8817272919097042204
 GameObject:
   m_ObjectHideFlags: 0
@@ -19840,6 +20075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 0.09
@@ -20264,6 +20500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 0
   requirement: 2
   nourishment: 1
@@ -20410,6 +20647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -20556,6 +20794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -20694,6 +20933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -20752,6 +20992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -20890,6 +21131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -20948,11 +21190,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
   growthRate: 0.075
   myOutline: {fileID: 0}
+--- !u!1001 &81064943070776223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.42419
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.76235
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9026432428109226047, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_Name
+      value: Waiter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+--- !u!4 &8588229208248725786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+  m_PrefabInstance: {fileID: 81064943070776223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &92806659550323514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21086,6 +21391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -21144,6 +21450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -21290,6 +21597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -22276,6 +22584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 4
   nourishment: 1
@@ -22338,6 +22647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 1
@@ -22396,6 +22706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 1
@@ -22542,6 +22853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -22688,6 +23000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -22834,6 +23147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -22972,6 +23286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -23030,6 +23345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -23168,6 +23484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -23226,6 +23543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -23376,6 +23694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -23522,6 +23841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -23668,6 +23988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -23806,6 +24127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -23864,6 +24186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24010,6 +24333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24156,6 +24480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24371,6 +24696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24429,6 +24755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24567,6 +24894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24625,6 +24953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24763,6 +25092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24821,6 +25151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -24959,6 +25290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25017,6 +25349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25163,6 +25496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25301,6 +25635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25359,6 +25694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25497,6 +25833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25555,6 +25892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25701,6 +26039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25839,6 +26178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -25897,6 +26237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26043,6 +26384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26189,6 +26531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26327,6 +26670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26385,6 +26729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26523,6 +26868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26581,6 +26927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26727,6 +27074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -26873,6 +27221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27019,6 +27368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27165,6 +27515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27311,6 +27662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27449,6 +27801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27507,6 +27860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27653,6 +28007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27804,6 +28159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -27950,6 +28306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28096,6 +28453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28242,6 +28600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28380,6 +28739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28438,6 +28798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28576,6 +28937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28634,6 +28996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28772,6 +29135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28830,6 +29194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -28968,6 +29333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29026,6 +29392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29164,6 +29531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29222,6 +29590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29368,6 +29737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29506,6 +29876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29564,6 +29935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29702,6 +30074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29760,6 +30133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29898,6 +30272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -29956,6 +30331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -30094,6 +30470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -30152,6 +30529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -30298,6 +30676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -30412,6 +30791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -30448,6 +30828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -30594,6 +30975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -30708,6 +31090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -30744,6 +31127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -30882,6 +31266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -30940,6 +31325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -31086,6 +31472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -31227,6 +31614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -31365,6 +31753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -31423,6 +31812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -31569,6 +31959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -31703,6 +32094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -31739,10 +32131,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
-  growthRate: 0.075
+  growthRate: 1
   myOutline: {fileID: 0}
 --- !u!4 &2166989013754618771 stripped
 Transform:
@@ -31885,6 +32278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32023,6 +32417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32081,6 +32476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32227,6 +32623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32373,6 +32770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32511,6 +32909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32569,6 +32968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32715,6 +33115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32853,6 +33254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -32911,6 +33313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33049,6 +33452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33107,6 +33511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33253,6 +33658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33391,6 +33797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33449,6 +33856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33595,6 +34003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33733,6 +34142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33791,6 +34201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -33800,6 +34211,68 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 226d290a813e47b39be08c1563db0e47, type: 3}
   m_PrefabInstance: {fileID: 2078640359055546321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2081202873827025871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498254495841610061, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_Name
+      value: GlassesGuy (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+--- !u!4 &3010437486355304504 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+  m_PrefabInstance: {fileID: 2081202873827025871}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2092177849223068805
 PrefabInstance:
@@ -33937,6 +34410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -34174,6 +34648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -34237,6 +34712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -34305,6 +34781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -34368,6 +34845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -34431,6 +34909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -34494,6 +34973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -34557,6 +35037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -34620,6 +35101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -34683,6 +35165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -34746,6 +35229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -34809,6 +35293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -34872,11 +35357,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
+--- !u!1001 &2134065395037044084
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498254495841610061, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+      propertyPath: m_Name
+      value: GlassesGuy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+--- !u!4 &2935057395428347523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3829979486657524727, guid: 2a0bd5105dea1ae40a2955841b8596e0, type: 3}
+  m_PrefabInstance: {fileID: 2134065395037044084}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2147656241478358062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35005,6 +35553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35063,6 +35612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35201,6 +35751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35259,6 +35810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35405,6 +35957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35642,6 +36195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -35705,6 +36259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35773,6 +36328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35836,6 +36392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -35899,6 +36456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -35962,6 +36520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -36025,6 +36584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -36088,6 +36648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -36151,6 +36712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -36214,6 +36776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -36277,6 +36840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -36340,6 +36904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -36473,6 +37038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -36531,6 +37097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -36669,6 +37236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -36727,6 +37295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -36885,6 +37454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 4
   nourishment: 1
@@ -37023,6 +37593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -37081,6 +37652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -37227,6 +37799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -37373,6 +37946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -37519,6 +38093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -37665,6 +38240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -37811,6 +38387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -37949,6 +38526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38007,6 +38585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38153,6 +38732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38299,6 +38879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38437,6 +39018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38495,6 +39077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38641,6 +39224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38787,6 +39371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -38901,6 +39486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -38937,6 +39523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -39075,6 +39662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39133,6 +39721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39279,6 +39868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39425,6 +40015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39563,6 +40154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39621,6 +40213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39767,6 +40360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39905,6 +40499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -39963,6 +40558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40101,6 +40697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40159,6 +40756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40297,6 +40895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40355,6 +40954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40488,6 +41088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40546,6 +41147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40696,6 +41298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -40842,6 +41445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -40988,6 +41592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -41225,6 +41830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -41288,6 +41894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -41351,6 +41958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -41414,6 +42022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -41482,6 +42091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -41545,6 +42155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -41608,6 +42219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -41671,6 +42283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -41734,6 +42347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -41797,6 +42411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -41860,6 +42475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -41923,6 +42539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -42056,6 +42673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42114,6 +42732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42252,6 +42871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42310,6 +42930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42448,6 +43069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42506,6 +43128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42644,6 +43267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42702,6 +43326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42840,6 +43465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -42898,6 +43524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -43044,6 +43671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -43182,6 +43810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -43240,6 +43869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -43477,6 +44107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -43540,6 +44171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -43603,6 +44235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -43666,6 +44299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -43734,6 +44368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -43797,6 +44432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -43860,6 +44496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -43923,6 +44560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -43986,6 +44624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -44049,6 +44688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -44112,6 +44752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -44175,6 +44816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -44308,6 +44950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -44366,6 +45009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -44504,6 +45148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -44562,6 +45207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -44708,6 +45354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -44858,6 +45505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -45004,6 +45652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45150,6 +45799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45288,6 +45938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45346,6 +45997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45355,6 +46007,72 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c31d0eddbfee4dc086afbcdb304148dc, type: 3}
   m_PrefabInstance: {fileID: 3369405802423195082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3385007752688012890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 2619899115675646355, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_Name
+      value: Granny
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002370990367339155, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df1029035410a244aafc43397ff7349a, type: 3}
+--- !u!4 &137894615803833715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+  m_PrefabInstance: {fileID: 3385007752688012890}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3393858829560045121
 PrefabInstance:
@@ -45492,6 +46210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45630,6 +46349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45688,6 +46408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45826,6 +46547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -45884,6 +46606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46027,6 +46750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46085,6 +46809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46223,6 +46948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46281,6 +47007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46419,6 +47146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46477,11 +47205,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
   growthRate: 0.075
   myOutline: {fileID: 0}
+--- !u!1001 &3589731720850410398
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 2619899115675646355, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_Name
+      value: Granny (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002370990367339155, guid: df1029035410a244aafc43397ff7349a, type: 3}
+      propertyPath: role
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df1029035410a244aafc43397ff7349a, type: 3}
+--- !u!4 &2216150395149428919 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3391229150768702249, guid: df1029035410a244aafc43397ff7349a, type: 3}
+  m_PrefabInstance: {fileID: 3589731720850410398}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3595630293391452319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46623,6 +47418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46761,6 +47557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46819,6 +47616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -46957,6 +47755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -47015,6 +47814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -47153,6 +47953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -47211,6 +48012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -47349,6 +48151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -47407,6 +48210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -47553,6 +48357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -47687,6 +48492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -47723,10 +48529,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
-  growthRate: 0.075
+  growthRate: 1
   myOutline: {fileID: 0}
 --- !u!1001 &3878940052386544090
 PrefabInstance:
@@ -47869,6 +48676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48007,6 +48815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48065,6 +48874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48211,6 +49021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48357,6 +49168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48597,6 +49409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48660,6 +49473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -48723,6 +49537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48786,6 +49601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -48849,6 +49665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -48912,6 +49729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -48975,6 +49793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -49038,6 +49857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -49101,6 +49921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -49164,6 +49985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -49227,6 +50049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -49290,6 +50113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -49518,6 +50342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -49664,6 +50489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -49802,6 +50628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -49860,6 +50687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -50092,6 +50920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -50160,6 +50989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -50223,6 +51053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -50286,6 +51117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -50349,6 +51181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -50412,6 +51245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -50475,6 +51309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -50538,6 +51373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -50601,6 +51437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -50664,6 +51501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -50727,6 +51565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -50790,6 +51629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -50931,6 +51771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51077,6 +51918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51215,6 +52057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51273,6 +52116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51411,6 +52255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51469,6 +52314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51615,6 +52461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51835,6 +52682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -51893,6 +52741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52031,6 +52880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52089,6 +52939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52235,6 +53086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52381,6 +53233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52618,6 +53471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52686,6 +53540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52749,6 +53604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -52812,6 +53668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -52875,6 +53732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -52938,6 +53796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -53001,6 +53860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -53064,6 +53924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -53127,6 +53988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -53190,6 +54052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -53253,6 +54116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -53316,6 +54180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -53457,6 +54322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -53595,6 +54461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -53653,6 +54520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -53662,6 +54530,68 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7cd8efa51fea4bc7a702b28cde652820, type: 3}
   m_PrefabInstance: {fileID: 4372548795330199952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4397732919663587215
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9026432428109226047, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_Name
+      value: Waiter (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+--- !u!4 &5406683635814421770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+  m_PrefabInstance: {fileID: 4397732919663587215}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4442741433559312739
 PrefabInstance:
@@ -53791,6 +54721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -53849,6 +54780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -53858,6 +54790,68 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 977208684f8c4a3eb6c8e2c632257fbc, type: 3}
   m_PrefabInstance: {fileID: 4442741433559312739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4445708105382772840
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 8339833777372779005, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_Name
+      value: JeanLady (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+--- !u!4 &4991265991397853999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+  m_PrefabInstance: {fileID: 4445708105382772840}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4448343445175833000
 PrefabInstance:
@@ -53987,6 +54981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54045,6 +55040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54191,6 +55187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54329,6 +55326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54387,6 +55385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54538,6 +55537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54684,6 +55684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54822,6 +55823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -54880,6 +55882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55026,6 +56029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55172,6 +56176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55318,6 +56323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55456,6 +56462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55514,6 +56521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55660,6 +56668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55798,6 +56807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55856,6 +56866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -55994,6 +57005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56052,6 +57064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56185,6 +57198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56243,6 +57257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56389,6 +57404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56527,6 +57543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56585,6 +57602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56723,6 +57741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56781,6 +57800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56919,6 +57939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -56977,6 +57998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -57123,6 +58145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -57269,6 +58292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -57415,6 +58439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -57565,6 +58590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -57711,6 +58737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -57849,6 +58876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -57907,6 +58935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58053,6 +59082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58199,6 +59229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58337,6 +59368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58395,6 +59427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58541,6 +59574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58679,6 +59713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58737,6 +59772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -58883,6 +59919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59029,6 +60066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59167,6 +60205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59225,6 +60264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59371,6 +60411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59509,6 +60550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59567,6 +60609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59705,6 +60748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59763,6 +60807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59901,6 +60946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -59959,6 +61005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60102,6 +61149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60160,6 +61208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60298,6 +61347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60356,6 +61406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60494,6 +61545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60552,6 +61604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60690,6 +61743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60748,6 +61802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60886,6 +61941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -60944,6 +62000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61082,6 +62139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61140,6 +62198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61286,6 +62345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61424,6 +62484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61482,6 +62543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61628,6 +62690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61766,6 +62829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61824,6 +62888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -61970,6 +63035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62116,6 +63182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62262,6 +63329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62408,6 +63476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62546,6 +63615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62604,6 +63674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62742,6 +63813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62800,6 +63872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -62946,6 +64019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63084,6 +64158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63142,6 +64217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63288,6 +64364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63426,6 +64503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63484,6 +64562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63630,6 +64709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63776,6 +64856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -63922,6 +65003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -64063,6 +65145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -64197,6 +65280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -64233,10 +65317,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
-  growthRate: 0.075
+  growthRate: 1
   myOutline: {fileID: 0}
 --- !u!4 &6863035275900092570 stripped
 Transform:
@@ -64482,6 +65567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -64540,6 +65626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -64686,6 +65773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -64832,6 +65920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -64978,6 +66067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -65124,6 +66214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -65270,6 +66361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -65416,6 +66508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -65554,6 +66647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -65612,6 +66706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -65840,6 +66935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -65986,6 +67082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66124,6 +67221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66182,6 +67280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66320,6 +67419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66378,6 +67478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66512,6 +67613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -66548,10 +67650,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
-  growthRate: 0.075
+  growthRate: 1
   myOutline: {fileID: 0}
 --- !u!4 &6522286208466447465 stripped
 Transform:
@@ -66686,6 +67789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66744,6 +67848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66753,6 +67858,68 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 977208684f8c4a3eb6c8e2c632257fbc, type: 3}
   m_PrefabInstance: {fileID: 6715869015751001620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6741843251779687196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611251876530235265, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_Name
+      value: Pappy (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+--- !u!4 &4567951132292099623 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+  m_PrefabInstance: {fileID: 6741843251779687196}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6743565524815014512
 PrefabInstance:
@@ -66890,6 +68057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -66899,6 +68067,68 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 943931ef30be0a448911ad0855b48ef7, type: 3}
   m_PrefabInstance: {fileID: 6743565524815014512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6825711763312916938
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 8339833777372779005, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_Name
+      value: JeanLady
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+--- !u!4 &2760449981638980237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8716393885719038791, guid: e8f639c25dafeef4cb28f3f1147a01ea, type: 3}
+  m_PrefabInstance: {fileID: 6825711763312916938}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6853026890245009167
 PrefabInstance:
@@ -67036,6 +68266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -67150,6 +68381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -67186,6 +68418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 8
   nourishment: 0.1
@@ -67332,6 +68565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -67569,6 +68803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -67632,6 +68867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -67695,6 +68931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -67758,6 +68995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -67821,6 +69059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -67884,6 +69123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -67947,6 +69187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -68010,6 +69251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -68073,6 +69315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68141,6 +69384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68204,6 +69448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -68267,6 +69512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68405,6 +69651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68463,6 +69710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68609,6 +69857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68755,6 +70004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68893,6 +70143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -68951,6 +70202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69097,6 +70349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69243,6 +70496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69381,6 +70635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69439,6 +70694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69585,6 +70841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69723,6 +70980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69781,6 +71039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -69927,6 +71186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -70073,6 +71333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -70219,6 +71480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -70365,6 +71627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -70503,6 +71766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 9
   nourishment: 0.1
@@ -70539,6 +71803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 9
   nourishment: 0.1
@@ -70677,6 +71942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -70735,11 +72001,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
   growthRate: 0.075
   myOutline: {fileID: 0}
+--- !u!1001 &7228409218709306988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.42419
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.76235
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611251876530235265, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+      propertyPath: m_Name
+      value: Pappy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+--- !u!4 &485049619194037079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7127872121630129467, guid: ae393a302f7641745bc59d72ecb43545, type: 3}
+  m_PrefabInstance: {fileID: 7228409218709306988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7239443311491722968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70967,6 +72296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -71030,6 +72360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -71093,6 +72424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -71156,6 +72488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -71219,6 +72552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -71282,6 +72616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -71345,6 +72680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -71408,6 +72744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -71471,6 +72808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -71534,6 +72872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -71602,6 +72941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -71665,6 +73005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -71803,6 +73144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -71861,6 +73203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -72007,6 +73350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -72239,6 +73583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -72302,6 +73647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -72365,6 +73711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -72428,6 +73775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -72491,6 +73839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -72554,6 +73903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -72617,6 +73967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -72680,6 +74031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -72743,6 +74095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -72806,6 +74159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -72874,6 +74228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -72937,6 +74292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -73075,6 +74431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -73133,6 +74490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -73279,6 +74637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -73425,6 +74784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -73563,6 +74923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -73621,6 +74982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -73767,6 +75129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -73913,6 +75276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74051,6 +75415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74109,6 +75474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74255,6 +75621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74393,6 +75760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74451,6 +75819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74597,6 +75966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74730,6 +76100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74788,6 +76159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74926,6 +76298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -74984,6 +76357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75130,6 +76504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75276,6 +76651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75414,6 +76790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75472,6 +76849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75618,6 +76996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75756,6 +77135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75814,6 +77194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -75960,6 +77341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76098,6 +77480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76156,6 +77539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76302,6 +77686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76440,6 +77825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76498,6 +77884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76636,6 +78023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76694,6 +78082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76832,6 +78221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -76890,6 +78280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77036,6 +78427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77174,6 +78566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77232,6 +78625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77378,6 +78772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77516,6 +78911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77574,6 +78970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77720,6 +79117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -77866,6 +79264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -78009,6 +79408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -78067,6 +79467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -78213,6 +79614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -78359,6 +79761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -78591,6 +79994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -78737,6 +80141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -78875,6 +80280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -78933,6 +80339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79079,6 +80486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79217,6 +80625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79275,6 +80684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79421,6 +80831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79567,6 +80978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79705,6 +81117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79763,6 +81176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79901,6 +81315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -79959,6 +81374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80097,6 +81513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80155,6 +81572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80293,6 +81711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80351,6 +81770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80497,6 +81917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80643,6 +82064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80781,6 +82203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80839,6 +82262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -80980,6 +82404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81118,6 +82543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81176,6 +82602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81314,6 +82741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81372,6 +82800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81510,6 +82939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81568,6 +82998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81706,6 +83137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81764,6 +83196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -81910,6 +83343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -82056,6 +83490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -82194,6 +83629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -82252,6 +83688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -82261,6 +83698,68 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc0ee7f4c22845ffbd4683cdf5e1c34a, type: 3}
   m_PrefabInstance: {fileID: 8876184796860925382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8893292991972390110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1019577781674356348}
+    m_Modifications:
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6735933
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7391023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -95.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9026432428109226047, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+      propertyPath: m_Name
+      value: Waiter (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+--- !u!4 &965131581113503323 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8507164270284520069, guid: 2ad8d9016d2b5ff459c9b15217a42fa2, type: 3}
+  m_PrefabInstance: {fileID: 8893292991972390110}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8938889315497975143
 PrefabInstance:
@@ -82398,6 +83897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -82536,6 +84036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -82594,6 +84095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -82831,6 +84333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -82894,6 +84397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -82957,6 +84461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -83020,6 +84525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -83083,6 +84589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
+  parent_count: 1
   usesOutline: 1
   requirement: 3
   nourishment: 0.15
@@ -83146,6 +84653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.05
@@ -83209,6 +84717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -83272,6 +84781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -83340,6 +84850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -83403,6 +84914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -83466,6 +84978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2
   nourishment: 0.1
@@ -83529,6 +85042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 2.5
   nourishment: 0.1
@@ -83662,6 +85176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -83720,6 +85235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -83866,6 +85382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025
@@ -84012,6 +85529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
+  parent_count: 1
   usesOutline: 1
   requirement: 0
   nourishment: 0.025

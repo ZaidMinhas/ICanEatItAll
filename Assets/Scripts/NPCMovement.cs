@@ -18,7 +18,7 @@ public class NPCMovement : MonoBehaviour
     private NavMeshAgent agent;
     private GameObject targetFood;
     private GameObject foodGrabbed;
-    [SerializeField] private GameObject[] spawnableFoods = {};
+    [SerializeField] private GameObject[] spawnableFoods = { };
     [SerializeField] private float foodOffset = 0.5f;
     [SerializeField] private float handsHeight = 0.8f;
     private int patrolIndex;
@@ -204,6 +204,7 @@ public class NPCMovement : MonoBehaviour
 
     void SpawnFood()
     {
+        return;
         if (spawnableFoods.Length == 0) return;
         int itemID = Random.Range(0, spawnableFoods.Length);
         GameObject food = Instantiate(spawnableFoods[itemID], patrolPoints[patrolIndex], Quaternion.identity);

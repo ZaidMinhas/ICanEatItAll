@@ -6,6 +6,7 @@ using UnityEngine;
 public class EdibleItem : MonoBehaviour
 {
     public bool destroyParents = false;
+    public int parent_count = 1;
     public bool usesOutline = true;
     public float requirement = 0;
     public float nourishment = 1;
@@ -91,7 +92,13 @@ public class EdibleItem : MonoBehaviour
     {
         if (destroyParents && transform.parent != null)
         {
-            Destroy(transform.parent.gameObject);
+
+            var p = transform;
+            for (int i = 0; i < parent_count; i++)
+            {
+                p = p.parent;
+            }
+            Destroy(p.gameObject);
         }
     }
 }

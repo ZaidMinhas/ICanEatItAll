@@ -1,6 +1,7 @@
 // using System;
 // using StarterAssets;
 using UnityEngine;
+using UnityEngine.InputSystem;
 // using UnityEngine.Events;
 
 public class Character : MonoBehaviour
@@ -22,7 +23,7 @@ public class Character : MonoBehaviour
             Debug.LogError("Character requires a HungerMeter and an assigned player Transform.", this);
             enabled = false;
         }
-        
+
         // gameState = FindAnyObjectByType<GameState>();
         // stateChanged = gameState.onStateChanged;
         // stateChanged.AddListener(OnStateChange);
@@ -45,6 +46,9 @@ public class Character : MonoBehaviour
         ChangeSize(hungerMeter.Level);
         GameSounds.Play("Music");
         GameSounds.Play("Ambience");
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
