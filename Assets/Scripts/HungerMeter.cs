@@ -21,6 +21,14 @@ public class HungerMeter : MonoBehaviour
         }
     }
 
+    public float TargetLevel
+    {
+        get
+        {
+            return targetLevel;
+        }
+    }
+
     public HungerState CurrentState => currState;
     protected int IntLevel => Mathf.Max(1, Mathf.CeilToInt(level));
 
