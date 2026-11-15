@@ -160,6 +160,7 @@ GameObject:
   - component: {fileID: 5420857361349278248}
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 8233899629508314609}
+  - component: {fileID: 8618336474101727778}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -221,6 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canMove: 1
   MoveSpeed: 4
   SprintSpeed: 6
   RotationSpeed: 1
@@ -385,4 +387,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28039676981c124784f10a77c72f013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPickupAction
-  pickupRay: {fileID: 0}
+  pickupRayGameObject: {fileID: 0}
+--- !u!114 &8618336474101727778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0573b143373e8084b82f9edab53d6ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRestartAction
+  hungerMeter: {fileID: 0}
