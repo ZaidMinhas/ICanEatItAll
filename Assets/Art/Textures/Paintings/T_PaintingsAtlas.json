@@ -1,0 +1,25 @@
+{
+  "width": 1024,
+  "height": 1024,
+  "items": [
+    { "name": "T_Painting_01", "x": 445, "y": 528, "w": 216, "h": 159, "srcW": 322, "srcH": 237 },
+    { "name": "T_Painting_02", "x": 445, "y": 692, "w": 204, "h": 157, "srcW": 304, "srcH": 234 },
+    { "name": "T_Painting_03", "x": 228, "y": 853, "w": 211, "h": 153, "srcW": 315, "srcH": 228 },
+    { "name": "T_Painting_04", "x": 653, "y": 692, "w": 196, "h": 157, "srcW": 293, "srcH": 234 },
+    { "name": "T_Painting_05", "x": 480, "y": 4, "w": 521, "h": 276, "srcW": 777, "srcH": 412 },
+    { "name": "T_Painting_06", "x": 4, "y": 310, "w": 147, "h": 214, "srcW": 219, "srcH": 319 },
+    { "name": "T_Painting_07", "x": 325, "y": 310, "w": 158, "h": 206, "srcW": 236, "srcH": 308 },
+    { "name": "T_Painting_08", "x": 155, "y": 310, "w": 166, "h": 210, "srcW": 248, "srcH": 313 },
+    { "name": "T_Painting_09", "x": 229, "y": 528, "w": 212, "h": 160, "srcW": 317, "srcH": 239 },
+    { "name": "T_Painting_10", "x": 443, "y": 853, "w": 210, "h": 151, "srcW": 314, "srcH": 226 },
+    { "name": "T_Painting_11", "x": 487, "y": 310, "w": 160, "h": 186, "srcW": 239, "srcH": 278 },
+    { "name": "T_Painting_12", "x": 651, "y": 310, "w": 162, "h": 181, "srcW": 242, "srcH": 270 },
+    { "name": "T_Painting_13", "x": 4, "y": 853, "w": 220, "h": 154, "srcW": 328, "srcH": 230 },
+    { "name": "T_Painting_14", "x": 665, "y": 528, "w": 218, "h": 158, "srcW": 325, "srcH": 236 },
+    { "name": "T_Painting_15", "x": 817, "y": 310, "w": 188, "h": 161, "srcW": 281, "srcH": 240 },
+    { "name": "T_Painting_16", "x": 4, "y": 4, "w": 472, "h": 302, "srcW": 705, "srcH": 451 },
+    { "name": "T_Painting_17", "x": 4, "y": 528, "w": 221, "h": 160, "srcW": 330, "srcH": 239 },
+    { "name": "T_Painting_18", "x": 4, "y": 692, "w": 219, "h": 157, "srcW": 327, "srcH": 234 },
+    { "name": "T_Painting_19", "x": 227, "y": 692, "w": 214, "h": 157, "srcW": 320, "srcH": 234 }
+  ]
+}

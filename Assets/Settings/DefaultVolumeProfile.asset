@@ -342,6 +342,9 @@ MonoBehaviour:
   skyOcclusionIntensityMultiplier:
     m_OverrideState: 1
     m_Value: 1
+  worldOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
 --- !u!114 &-1216621516061285780
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -375,6 +378,9 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
     m_OverrideState: 1
+    m_Value: 0
+  filter:
+    m_OverrideState: 0
     m_Value: 0
   downscale:
     m_OverrideState: 1
@@ -462,8 +468,7 @@ MonoBehaviour:
   - {fileID: -6288072647309666549}
   - {fileID: 7518938298396184218}
   - {fileID: -1410297666881709256}
-  - {fileID: -7750755424749557576}
-  - {fileID: -5139089513906902183}
+  - {fileID: 6371086892314237709}
 --- !u!114 &853819529557874667
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -852,6 +857,49 @@ MonoBehaviour:
   intensity:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &6371086892314237709
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa77c490e4c230428826e6a5c5c46ba, type: 3}
+  m_Name: PSXPostProcessVolume
+  m_EditorClassIdentifier: Assembly-CSharp::PSXShaderKit.URP.PSXPostProcessVolume
+  active: 1
+  targetHeight:
+    m_OverrideState: 1
+    m_Value: 240
+  pixelationFactor:
+    m_OverrideState: 1
+    m_Value: 0.25
+  matchDitherToPixelation:
+    m_OverrideState: 1
+    m_Value: 1
+  colorEmulationMode:
+    m_OverrideState: 1
+    m_Value: 2
+  fullscreenColorDepth:
+    m_OverrideState: 0
+    m_Value: {x: 256, y: 256, z: 256}
+  fullscreenDitherDepth:
+    m_OverrideState: 0
+    m_Value: {x: 32, y: 32, z: 32}
+  ditheringMatrixSize:
+    m_OverrideState: 1
+    m_Value: 2
+  ditheringScale:
+    m_OverrideState: 1
+    m_Value: 1
+  interlacingSize:
+    m_OverrideState: 0
+    m_Value: 0
+  debugTint:
+    m_OverrideState: 0
+    m_Value: 1
 --- !u!114 &6940869943325143175
 MonoBehaviour:
   m_ObjectHideFlags: 3
