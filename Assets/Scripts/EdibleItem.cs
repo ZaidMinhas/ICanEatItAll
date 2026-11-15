@@ -5,6 +5,8 @@ using UnityEngine;
 [DefaultExecutionOrder(100)] // Initialize after Outline has created its materials in Awake.
 public class EdibleItem : MonoBehaviour
 {
+    public bool destroyParents = false;
+    public bool usesOutline = true;
     public int requirement = 0;
     public float nourishment = 1;
 
@@ -12,6 +14,8 @@ public class EdibleItem : MonoBehaviour
 
     public Outline myOutline;
     public bool IsConsumed { get; private set; }
+
+    private Material mat;
 
     void Awake()
     {
@@ -36,6 +40,11 @@ public class EdibleItem : MonoBehaviour
 
     internal void ToggleOutline(bool outlineOn)
     {
+        if (!usesOutline)
+        {
+            ToggleGlow(outlineOn);
+            return;
+        }
         if (myOutline == null)
         {
             myOutline = GetComponent<Outline>();
@@ -50,6 +59,22 @@ public class EdibleItem : MonoBehaviour
         myOutline.enabled = outlineOn;
     }
 
+    void ToggleGlow(bool glowOn)
+    {
+
+        if (!mat)
+        {
+            mat = GetComponent<Renderer>().material;
+        }
+
+        Color color = new Color(0, 0, 0, 0);
+        if (glowOn)
+        {
+            color = new Color(1, 1, 1, 1);
+        }
+        mat.SetColor("_CubemapColor", color);
+    }
+
     internal void ChangeOutlineColor(Color newColor)
     {
         if (myOutline == null)
@@ -59,6 +84,14 @@ public class EdibleItem : MonoBehaviour
         if (myOutline != null)
         {
             myOutline.OutlineColor = newColor;
+        }
+    }
+
+    public void OnDestroy()
+    {
+        if (destroyParents && transform.parent != null)
+        {
+            Destroy(transform.parent.gameObject);
         }
     }
 }
