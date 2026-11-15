@@ -53,6 +53,8 @@ namespace ICanEatItAll.Audio
         {
             if (instance != null && instance != this) { Destroy(gameObject); return; }
             instance = this;
+            // Keep music running when the game window loses focus.
+            Application.runInBackground = true;
             DontDestroyOnLoad(gameObject);
             master = ReadLevel("Master", 1f);
             masterMuted = PlayerPrefs.GetInt(PrefPrefix + "MasterMuted", 0) != 0;
