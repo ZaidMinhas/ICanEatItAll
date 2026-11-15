@@ -1080,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1719044108975211361, guid: 3f5fb4b6fd0f85941b6b0c3e9d2a8507, type: 3}
       propertyPath: role
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1719044108975211361, guid: 3f5fb4b6fd0f85941b6b0c3e9d2a8507, type: 3}
       propertyPath: currentState

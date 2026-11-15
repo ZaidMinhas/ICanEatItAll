@@ -206,6 +206,9 @@ public class NPCMovement : MonoBehaviour
     {
         if (spawnableFoods.Length == 0) return;
         int itemID = Random.Range(0, spawnableFoods.Length);
-        Instantiate(spawnableFoods[itemID], patrolPoints[patrolIndex], Quaternion.identity);
+        GameObject food = Instantiate(spawnableFoods[itemID], patrolPoints[patrolIndex], Quaternion.identity);
+        food.tag = "NPCTarget";
+        if (food.GetComponent<Collider>() == null) food.AddComponent<BoxCollider>();
+        if (food.GetComponent<EdibleItem>() == null) food.AddComponent<EdibleItem>();
     }
 }
