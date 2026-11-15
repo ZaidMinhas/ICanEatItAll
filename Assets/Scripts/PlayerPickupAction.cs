@@ -28,6 +28,7 @@ public class PlayerPickupAction : MonoBehaviour
 
         pickupRay.ClearTarget();
         GameSounds.Play("Eat");
+
         Destroy(item.gameObject);
     }
 
