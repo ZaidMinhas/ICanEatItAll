@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Character
   hungerMeter: {fileID: 606356732046151684}
   MIN_SCALE: 0.5
-  DEFAULT_SCALE: 1.8
+  DEFAULT_SCALE: 1.5
   player: {fileID: 6477436816274802085}
 --- !u!114 &606356732046151684
 MonoBehaviour:
@@ -118,8 +118,8 @@ MonoBehaviour:
   level: 1
   currState: 0
   isDebug: 0
-  REST_DURATION_SCALE: 10
-  DECAY_RATE: 0.1
+  REST_DURATION_SCALE: 30
+  DECAY_RATE: 0.085
   restDuration: 0
   restTimeout: 0
   decayRate: 0
