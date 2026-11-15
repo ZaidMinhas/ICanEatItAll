@@ -7,7 +7,7 @@ public class EdibleItem : MonoBehaviour
 {
     public bool destroyParents = false;
     public bool usesOutline = true;
-    public int requirement = 0;
+    public float requirement = 0;
     public float nourishment = 1;
 
     public float growthRate = 0.075f;

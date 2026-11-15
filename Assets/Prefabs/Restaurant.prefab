@@ -2063,6 +2063,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1019577781674356348}
+  - component: {fileID: 4817745497875158909}
   m_Layer: 0
   m_Name: Restaurant
   m_TagString: Untagged
@@ -2125,6 +2126,38 @@ Transform:
   - {fileID: 2524285185778070931}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4817745497875158909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811752880094856338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 0bf4432f90386e545bf15b294e0df366, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &831486831857633283
 GameObject:
   m_ObjectHideFlags: 0
@@ -30348,10 +30381,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 601454084030624749}
+      addedObject: {fileID: 703977168727577079}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 703977168727577079}
+      addedObject: {fileID: 9104745078602582614}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9064110900035635546}
   m_SourcePrefab: {fileID: 100100000, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
 --- !u!4 &1290763205570897609 stripped
 Transform:
@@ -30363,7 +30399,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
   m_PrefabInstance: {fileID: 1613149818472874274}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &601454084030624749
+--- !u!114 &703977168727577079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919209535407586419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &9104745078602582614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30381,7 +30435,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &703977168727577079
+--- !u!114 &9064110900035635546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30623,10 +30677,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 86335743884490550}
+      addedObject: {fileID: 8106368881224932829}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8106368881224932829}
+      addedObject: {fileID: 3153986302472003456}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5596364611974152960}
   m_SourcePrefab: {fileID: 100100000, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
 --- !u!4 &1250702195849817001 stripped
 Transform:
@@ -30638,7 +30695,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
   m_PrefabInstance: {fileID: 1644335548867841090}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &86335743884490550
+--- !u!114 &8106368881224932829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878198586766635283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &3153986302472003456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30656,7 +30731,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &8106368881224932829
+--- !u!114 &5596364611974152960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31581,10 +31656,13 @@ PrefabInstance:
       addedObject: {fileID: 301659707373613403}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7260229178915402866}
+      addedObject: {fileID: 1578397518479038369}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1578397518479038369}
+      addedObject: {fileID: 7393185356655957896}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1597369187577603594}
   m_SourcePrefab: {fileID: 100100000, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
 --- !u!1 &1538368131699112233 stripped
 GameObject:
@@ -31612,7 +31690,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.050000116, y: 0.05000001, z: 0}
   m_Center: {x: -0.024999948, y: 0.025000004, z: 0}
---- !u!114 &7260229178915402866
+--- !u!114 &1578397518479038369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538368131699112233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &7393185356655957896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31630,7 +31726,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &1578397518479038369
+--- !u!114 &1597369187577603594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34079,7 +34175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -34399,7 +34495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -34651,7 +34747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -34777,7 +34873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -35547,7 +35643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -35867,7 +35963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -36119,7 +36215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -36245,7 +36341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -38774,10 +38870,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1618497928132022179}
+      addedObject: {fileID: 4700401258737636927}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4700401258737636927}
+      addedObject: {fileID: 1746598026836802746}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3809930735781797987}
   m_SourcePrefab: {fileID: 100100000, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
 --- !u!4 &2569223190851613326 stripped
 Transform:
@@ -38789,7 +38888,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
   m_PrefabInstance: {fileID: 2606756923245761893}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1618497928132022179
+--- !u!114 &4700401258737636927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2948844339835938868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &1746598026836802746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38807,7 +38924,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &4700401258737636927
+--- !u!114 &3809930735781797987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41366,7 +41483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -41492,7 +41609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -41555,7 +41672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -41807,7 +41924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -43618,7 +43735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -43744,7 +43861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -43807,7 +43924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -44059,7 +44176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -47518,10 +47635,13 @@ PrefabInstance:
       addedObject: {fileID: 2482823638522436169}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1287917471089676460}
+      addedObject: {fileID: 1172747774241671731}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1172747774241671731}
+      addedObject: {fileID: 5339792598482472003}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1943370082173015411}
   m_SourcePrefab: {fileID: 100100000, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
 --- !u!4 &3672219310295679775 stripped
 Transform:
@@ -47554,7 +47674,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.049999997, y: 0.049999997, z: 0}
   m_Center: {x: -0.024999999, y: 0.024999999, z: -0.000000059604645}
---- !u!114 &1287917471089676460
+--- !u!114 &1172747774241671731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160631908397570469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &5339792598482472003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47572,7 +47710,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &1172747774241671731
+--- !u!114 &1943370082173015411
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48712,7 +48850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -48775,7 +48913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -48838,7 +48976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -48964,7 +49102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -50212,7 +50350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -50275,7 +50413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -50401,7 +50539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -50527,7 +50665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -52738,7 +52876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -52801,7 +52939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -52927,7 +53065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -52990,7 +53128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -64012,10 +64150,13 @@ PrefabInstance:
       addedObject: {fileID: 7593177390317484335}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8299136331031908092}
+      addedObject: {fileID: 1884852507253496250}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1884852507253496250}
+      addedObject: {fileID: 830101421766571327}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 627132769035184454}
   m_SourcePrefab: {fileID: 100100000, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
 --- !u!1 &6085971219032594976 stripped
 GameObject:
@@ -64043,7 +64184,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.049999997, y: 0.049999997, z: 0}
   m_Center: {x: -0.024999999, y: 0.024999999, z: 0.000000014901161}
---- !u!114 &8299136331031908092
+--- !u!114 &1884852507253496250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085971219032594976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &830101421766571327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64061,7 +64220,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &1884852507253496250
+--- !u!114 &627132769035184454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66306,10 +66465,13 @@ PrefabInstance:
       addedObject: {fileID: 1118392737660277649}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4862637948427124042}
+      addedObject: {fileID: 5393904869342513411}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5393904869342513411}
+      addedObject: {fileID: 3526702666323503522}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 558186699979317971}
   m_SourcePrefab: {fileID: 100100000, guid: da53abebf9ee4684a9ca095be3ca4499, type: 3}
 --- !u!1 &5892960578848306899 stripped
 GameObject:
@@ -66337,7 +66499,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05000001, y: 0.05000001, z: 0}
   m_Center: {x: -0.025000004, y: 0.025000004, z: -0.000000009778887}
---- !u!114 &4862637948427124042
+--- !u!114 &5393904869342513411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5892960578848306899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &3526702666323503522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66355,7 +66535,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &5393904869342513411
+--- !u!114 &558186699979317971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66944,17 +67124,38 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2806117715608987803}
+      addedObject: {fileID: 8943798623161567780}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8943798623161567780}
+      addedObject: {fileID: 908749106128150522}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 293200869168340666}
   m_SourcePrefab: {fileID: 100100000, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
 --- !u!1 &6001381527000418139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3575904b4c065b845aea2b714d172d26, type: 3}
   m_PrefabInstance: {fileID: 6883850309395724810}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2806117715608987803
+--- !u!114 &8943798623161567780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6001381527000418139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 1
+  usesOutline: 1
+  requirement: 8
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &908749106128150522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66972,7 +67173,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &8943798623161567780
+--- !u!114 &293200869168340666
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67369,7 +67570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -67621,7 +67822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -67747,7 +67948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -67810,7 +68011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -70250,10 +70451,13 @@ PrefabInstance:
       addedObject: {fileID: 6580724214898006373}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b36a28d0ed73fe2498e5af9feb745786, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2020809080524233625}
+      addedObject: {fileID: 4837688579847829929}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b36a28d0ed73fe2498e5af9feb745786, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4837688579847829929}
+      addedObject: {fileID: 3153796385645595687}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b36a28d0ed73fe2498e5af9feb745786, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5674350495873440995}
   m_SourcePrefab: {fileID: 100100000, guid: b36a28d0ed73fe2498e5af9feb745786, type: 3}
 --- !u!4 &7239732520505274880 stripped
 Transform:
@@ -70286,7 +70490,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.049999997, y: 0.04999999, z: 2.408738e-16}
   m_Center: {x: -0.024999999, y: 0.024999995, z: 1.204369e-16}
---- !u!114 &2020809080524233625
+--- !u!114 &4837688579847829929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012856954537846970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e9930848870c46ac3ba3b60ebccb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
+  destroyParents: 0
+  usesOutline: 1
+  requirement: 9
+  nourishment: 0.1
+  growthRate: 0.075
+  myOutline: {fileID: 0}
+--- !u!114 &3153796385645595687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70304,7 +70526,7 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &4837688579847829929
+--- !u!114 &5674350495873440995
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70746,7 +70968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -70872,7 +71094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -71061,7 +71283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -71444,7 +71666,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -72018,7 +72240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -72144,7 +72366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -72333,7 +72555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -72716,7 +72938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -82610,7 +82832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -82736,7 +82958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -82799,7 +83021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
@@ -83308,7 +83530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 2
+  requirement: 2.5
   nourishment: 0.1
   growthRate: 0.5
   myOutline: {fileID: 0}
