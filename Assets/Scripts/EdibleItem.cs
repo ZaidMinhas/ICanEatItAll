@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(Outline))]
+[DefaultExecutionOrder(100)] // Initialize after Outline has created its materials in Awake.
 public class EdibleItem : MonoBehaviour
 {
     public int requirement = 0;
@@ -9,26 +11,54 @@ public class EdibleItem : MonoBehaviour
     public float growthRate = 0.075f;
 
     public Outline myOutline;
+    public bool IsConsumed { get; private set; }
 
-    void Start()
+    void Awake()
     {
-        myOutline = GetComponent<Outline>();
+        ToggleOutline(false);
+    }
+
+    void OnDisable() => ToggleOutline(false);
+
+    public bool CanBeEatenBy(HungerMeter meter)
+    {
+        return isActiveAndEnabled && !IsConsumed && meter != null && meter.isActiveAndEnabled
+            && meter.CurrentState != HungerState.Death && meter.Level > 0 && meter.Level >= requirement
+            && !float.IsNaN(nourishment) && !float.IsInfinity(nourishment) && nourishment > 0
+            && !float.IsNaN(growthRate) && !float.IsInfinity(growthRate) && growthRate > 0;
+    }
+
+    internal void MarkConsumed()
+    {
+        IsConsumed = true;
+        ToggleOutline(false);
     }
 
     internal void ToggleOutline(bool outlineOn)
     {
-        if (outlineOn)
+        if (myOutline == null)
         {
-            myOutline.OutlineMode = Outline.Mode.OutlineVisible;
+            myOutline = GetComponent<Outline>();
         }
-        else
+        if (myOutline == null)
         {
-            myOutline.OutlineMode = Outline.Mode.OutlineHidden;
+            return;
         }
+
+        myOutline.OutlineMode = Outline.Mode.OutlineVisible;
+        myOutline.OutlineWidth = 10;
+        myOutline.enabled = outlineOn;
     }
 
     internal void ChangeOutlineColor(Color newColor)
     {
-        myOutline.OutlineColor = newColor;
+        if (myOutline == null)
+        {
+            myOutline = GetComponent<Outline>();
+        }
+        if (myOutline != null)
+        {
+            myOutline.OutlineColor = newColor;
+        }
     }
 }

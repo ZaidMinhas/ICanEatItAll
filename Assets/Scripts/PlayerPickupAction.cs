@@ -3,40 +3,33 @@ using UnityEngine.InputSystem;
 
 public class PlayerPickupAction : MonoBehaviour
 {
-    [SerializeField]
-    private const float GROWTH_CONST = 0.25f;
     public GameObject pickupRayGameObject;
     private PlayerPickupRay pickupRay;
     private Character character;
 
-    public void Start()
+    void Awake()
     {
         if (pickupRayGameObject != null)
-        {
             pickupRay = pickupRayGameObject.GetComponent<PlayerPickupRay>();
-        }
-
         character = GetComponentInParent<Character>();
+        if (pickupRay == null || character == null)
+        {
+            Debug.LogError("PlayerPickupAction requires a pickup ray and a parent Character.", this);
+            enabled = false;
+        }
     }
 
     public void OnInteract(InputValue inputValue)
     {
-        if (!inputValue.isPressed) return;
-        // print("Interact");
-        // print(pickupRay.name + " can interact");
-        if (pickupRay.GetCanInteract() && pickupRay.GetLastEdibleEntity() != null)
-        {
-            // print("Destroy" + pickupRay.GetlastEdibleGameObject().name);
-            // Change size
-            character.GetHungerMeter().Eat(pickupRay.GetLastEdibleEntity());
-            GameSounds.Play("Eat");
-            // Eat edible entity
-            Destroy(pickupRay.GetlastEdibleGameObject());
-        }
+        if (!isActiveAndEnabled || inputValue == null || !inputValue.isPressed || pickupRay == null || character == null) return;
+        EdibleItem item = pickupRay.RefreshTarget();
+        HungerMeter meter = character.GetHungerMeter();
+        if (item == null || !item.CanBeEatenBy(meter) || !meter.TryEat(item)) return;
+
+        pickupRay.ClearTarget();
+        GameSounds.Play("Eat");
+        Destroy(item.gameObject);
     }
 
-    public PlayerPickupRay GetPlayerPickupRay()
-    {
-        return pickupRay;
-    }
+    public PlayerPickupRay GetPlayerPickupRay() => pickupRay;
 }

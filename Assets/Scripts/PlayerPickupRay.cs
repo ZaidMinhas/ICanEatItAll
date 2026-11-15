@@ -1,83 +1,58 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerPickupRay : MonoBehaviour
 {
-    [SerializeField]
-
     public HungerMeter hungerMeter;
+    [SerializeField] private Camera viewCamera;
     private bool canPickup = true;
-    private bool canInteract = false;
-    private GameObject lastEdibleGameObject = null;
-    private EdibleItem lastEdibleEntity = null;
+    private EdibleItem lastEdibleEntity;
 
     public float DEFAULT_RAY_DISTANCE = 4;
     public float MIN_RAY_DISTANCE = 2;
 
-
-    void Update()
+    void Awake()
     {
-        if (canPickup)
+        if (hungerMeter == null) hungerMeter = GetComponentInParent<HungerMeter>();
+        if (hungerMeter == null)
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-
-            float pickupScale = MIN_RAY_DISTANCE + (DEFAULT_RAY_DISTANCE - MIN_RAY_DISTANCE) * hungerMeter.Level;
-            // pickupScale *= pickupScale;
-            // Debug.Log(pickupScale);
-            if (Physics.Raycast(ray, out hit, pickupScale))
-            {
-                EdibleItem edibleEntity = hit.collider.gameObject.GetComponent<EdibleItem>();
-                // Edible entity sighted
-                if (edibleEntity != null)
-                {
-                    // Debug.Log("Hit " + edibleEntity.name + " at distance: " + hit.distance);
-                    if (edibleEntity != lastEdibleEntity || lastEdibleEntity.myOutline.OutlineMode == Outline.Mode.OutlineHidden)
-                    {
-                        lastEdibleEntity = edibleEntity;
-                        lastEdibleGameObject = hit.collider.gameObject;
-                        edibleEntity.ToggleOutline(true);
-
-                        canInteract = true;
-                    }
-                }
-                // No edible entity
-                // else if (lastEdibleEntity.myOutline.OutlineMode == Outline.Mode.OutlineVisible)
-                // {
-                //     lastEdibleEntity.ToggleOutline(false);
-                //     canInteract = false;
-                // }
-            }
-            // No edible entity
-            else if (lastEdibleEntity != null)
-            {
-                if (lastEdibleEntity.myOutline.OutlineMode == Outline.Mode.OutlineVisible)
-                {
-                    lastEdibleEntity.ToggleOutline(false);
-                    canInteract = false;
-                }
-            }
+            Debug.LogError("PlayerPickupRay requires a HungerMeter on its character.", this);
+            enabled = false;
         }
     }
 
-    public EdibleItem GetLastEdibleEntity()
+    void Update() => RefreshTarget();
+    void OnDisable() => ClearTarget();
+
+    // Also called when E is pressed, so input never consumes a stale target.
+    public EdibleItem RefreshTarget()
     {
+        EdibleItem target = null;
+        Camera camera = viewCamera != null ? viewCamera : Camera.main;
+        if (isActiveAndEnabled && canPickup && hungerMeter != null && camera != null && camera.isActiveAndEnabled)
+        {
+            Ray ray = camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+            float pickupScale = MIN_RAY_DISTANCE + (DEFAULT_RAY_DISTANCE - MIN_RAY_DISTANCE) * hungerMeter.Level;
+            if (Physics.Raycast(ray, out RaycastHit hit, pickupScale))
+            {
+                var edible = hit.collider.GetComponentInParent<EdibleItem>();
+                if (edible != null && edible.CanBeEatenBy(hungerMeter)) target = edible;
+            }
+        }
+        SetTarget(target);
         return lastEdibleEntity;
     }
 
-    public bool GetCanInteract()
+    void SetTarget(EdibleItem target)
     {
-        return canInteract;
+        if (lastEdibleEntity != target && lastEdibleEntity != null)
+            lastEdibleEntity.ToggleOutline(false);
+        lastEdibleEntity = target;
+        if (lastEdibleEntity != null) lastEdibleEntity.ToggleOutline(true);
     }
 
-    public GameObject GetlastEdibleGameObject()
-    {
-        return lastEdibleGameObject;
-    }
-
-    public bool GetCanPickup()
-    {
-        return canPickup;
-    }
+    public void ClearTarget() => SetTarget(null);
+    public EdibleItem GetLastEdibleEntity() => lastEdibleEntity;
+    public bool GetCanInteract() => isActiveAndEnabled && lastEdibleEntity != null && lastEdibleEntity.CanBeEatenBy(hungerMeter);
+    public GameObject GetlastEdibleGameObject() => lastEdibleEntity != null ? lastEdibleEntity.gameObject : null;
+    public bool GetCanPickup() => canPickup;
 }

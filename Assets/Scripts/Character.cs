@@ -9,6 +9,16 @@ public class Character : MonoBehaviour
     public float DEFAULT_SCALE = 1.8f;
     public Transform player;
 
+    void Awake()
+    {
+        if (hungerMeter == null) hungerMeter = GetComponent<HungerMeter>();
+        if (hungerMeter == null || player == null)
+        {
+            Debug.LogError("Character requires a HungerMeter and an assigned player Transform.", this);
+            enabled = false;
+        }
+    }
+
     void OnEnable()
     {
         GameState gameState = GetComponent<GameState>();
@@ -23,8 +33,7 @@ public class Character : MonoBehaviour
 
     public void Start()
     {
-        hungerMeter = GetComponent<HungerMeter>();
-        player.localScale = Vector3.one * DEFAULT_SCALE;
+        ChangeSize(hungerMeter.Level);
         GameSounds.Play("Music");
         GameSounds.Play("Ambience");
     }
@@ -37,7 +46,7 @@ public class Character : MonoBehaviour
     public void ChangeSize(float level)
     {
         float scale = MIN_SCALE + (DEFAULT_SCALE - MIN_SCALE) * level;
-        player.localScale = Vector3.one * scale;
+        if (player != null) player.localScale = Vector3.one * scale;
     }
 
     public HungerMeter GetHungerMeter()

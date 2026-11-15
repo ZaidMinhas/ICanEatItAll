@@ -51,19 +51,26 @@ public class HungerMeter : MonoBehaviour
 
     public void Eat(EdibleItem item)
     {
-        if (currState == HungerState.Death || item == null) return;
+        TryEat(item);
+    }
+
+    public bool TryEat(EdibleItem item)
+    {
+        if (item == null || !item.CanBeEatenBy(this)) return false;
         if (!IsFinite(item.nourishment) || item.nourishment <= 0 ||
-            !IsFinite(item.growthRate) || item.growthRate <= 0) return;
+            !IsFinite(item.growthRate) || item.growthRate <= 0) return false;
 
         bool alreadyGrowing = currState == HungerState.Growing;
         float nextTarget = (alreadyGrowing ? Mathf.Max(targetLevel, level) : level)
             + item.nourishment;
-        if (!IsFinite(nextTarget)) return;
+        if (!IsFinite(nextTarget)) return false;
 
+        item.MarkConsumed();
         targetLevel = nextTarget;
         growthRate = alreadyGrowing ? Mathf.Max(growthRate, item.growthRate) : item.growthRate;
         setState(HungerState.Growing);
         GameSounds.Play("Grow");
+        return true;
     }
 
     protected void setState(HungerState state)
