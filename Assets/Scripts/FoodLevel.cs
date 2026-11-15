@@ -28,8 +28,8 @@ public class FoodLevel : MonoBehaviour
     {
         if (hungerMeter != null)
         {
-            level = hungerMeter.GetIntLevel();
-            myText.text = "Food Level: " + level;   
+            level = (int)hungerMeter.Level;
+            myText.text = "Food Level: " + level;
         }
     }
 }
