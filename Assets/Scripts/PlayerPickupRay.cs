@@ -25,7 +25,7 @@ public class PlayerPickupRay : MonoBehaviour
 
             float pickupScale = MIN_RAY_DISTANCE + (DEFAULT_RAY_DISTANCE - MIN_RAY_DISTANCE) * hungerMeter.Level;
             // pickupScale *= pickupScale;
-            Debug.Log(pickupScale);
+            // Debug.Log(pickupScale);
             if (Physics.Raycast(ray, out hit, pickupScale))
             {
                 EdibleItem edibleEntity = hit.collider.gameObject.GetComponent<EdibleItem>();
