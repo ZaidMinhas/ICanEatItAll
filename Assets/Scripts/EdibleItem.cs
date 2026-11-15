@@ -5,6 +5,7 @@ using UnityEngine;
 [DefaultExecutionOrder(100)] // Initialize after Outline has created its materials in Awake.
 public class EdibleItem : MonoBehaviour
 {
+    public bool destroyParents = false;
     public int requirement = 0;
     public float nourishment = 1;
 
@@ -59,6 +60,14 @@ public class EdibleItem : MonoBehaviour
         if (myOutline != null)
         {
             myOutline.OutlineColor = newColor;
+        }
+    }
+
+    public void OnDestroy()
+    {
+        if (destroyParents && transform.parent != null)
+        {
+            Destroy(transform.parent.gameObject);
         }
     }
 }
