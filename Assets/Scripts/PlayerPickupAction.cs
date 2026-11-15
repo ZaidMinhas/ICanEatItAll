@@ -21,13 +21,15 @@ public class PlayerPickupAction : MonoBehaviour
 
     public void OnInteract(InputValue inputValue)
     {
+        if (!inputValue.isPressed) return;
         // print("Interact");
         // print(pickupRay.name + " can interact");
-        if (pickupRay.GetCanInteract())
+        if (pickupRay.GetCanInteract() && pickupRay.GetLastEdibleEntity() != null)
         {
             // print("Destroy" + pickupRay.GetlastEdibleGameObject().name);
             // Change size
             character.GetHungerMeter().Eat(pickupRay.GetLastEdibleEntity());
+            GameSounds.Play("Eat");
             // Eat edible entity
             Destroy(pickupRay.GetlastEdibleGameObject());
         }

@@ -2,6 +2,17 @@
 
 The audio manager and settings panel start automatically in every scene and survive scene changes. No scene setup or mixer wiring is required. The scene still needs an enabled **Audio Listener**, normally on its camera.
 
+## Connected gameplay sounds
+
+`Assets/Resources/Sounds` contains the game's configured sounds. Open any of these assets in Sound Control to change clips or volume. Keep their names: gameplay uses `GameSounds.Play("Eat")`, for example, to find them automatically without scene references.
+
+- Eating randomly chooses one of the three bite clips. Growth plays when the hunger meter enters Growing.
+- NPCs play Flee once on entering that state and Steal when taking food. Both sounds are positional.
+- The Character listens to GameState changes and plays Win or Lose. GameState itself still only manages states.
+- When the Character starts, one of the two music tracks is chosen and looped, along with looping restaurant ambience. Music and ambience use their separate volume categories. Restart stops the old sounds before the new Character starts them again.
+
+These hooks do not add any win condition or GUI. Check playback in a gameplay scene with a Character and an Audio Listener.
+
 ## Add a sound without code
 
 1. Open **Tools > Audio > Sound Control** and choose **Create Sound Asset**. You can also right-click in the Project window and choose **Create > Audio > Sound**.
