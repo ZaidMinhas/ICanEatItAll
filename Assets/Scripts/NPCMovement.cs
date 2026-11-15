@@ -35,8 +35,8 @@ public class NPCMovement : MonoBehaviour
             GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
             if (playerObject != null) player = playerObject.transform;
         }
-        // Child objects mark the patrol positions when the game starts.
-        foreach (Transform point in transform) patrolPoints.Add(point.position);
+        // // Child objects mark the patrol positions when the game starts.
+        // foreach (Transform point in transform) patrolPoints.Add(point.position);
 
         if (role == NPCRole.Stealer) currentState = NPCState.FindFood;
         else currentState = NPCState.Patrol;
