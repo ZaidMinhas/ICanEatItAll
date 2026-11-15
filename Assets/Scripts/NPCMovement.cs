@@ -1,117 +1,128 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
+public enum NPCState { Patrol, Flee, FindFood }
 
-public enum NPCState
-{
-    Patrol,
-    Flee,
-    FindFood
-}
-
+[RequireComponent(typeof(NavMeshAgent))]
 public class NPCMovement : MonoBehaviour
 {
-    [SerializeField]
-    private List<Vector3> patrolPoints = new();
-    private Vector3 currentPoint;
-    private int currentPointID = 0;
-    private UnityEngine.AI.NavMeshAgent agent;
-
     public NPCState currentState;
+    public Transform player;
+    [Min(0.1f)] public float fleeDistance = 5f;
+    [Min(0.1f)] public float stealingDistance = 1.5f;
+    [SerializeField] private List<Vector3> patrolPoints = new();
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private NavMeshAgent agent;
+    private GameObject targetFood;
+    private int patrolIndex;
+    private NPCState previousState;
+
     void Start()
     {
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
+        // Child objects mark the patrol positions when the game starts.
+        foreach (Transform point in transform) patrolPoints.Add(point.position);
+    }
 
-        if (agent == null || !agent.isOnNavMesh)
+    void Update()
+    {
+        if (!agent.isOnNavMesh) return;
+
+        // Forget the old destination when choosing a different state.
+        if (currentState != previousState)
         {
-            Debug.LogWarning("NPC needs a NavMeshAgent placed on a baked NavMesh.", this);
-            enabled = false;
-            return;
+            agent.ResetPath();
+            targetFood = null;
+            previousState = currentState;
         }
 
-        if (currentState == NPCState.Patrol)
+        switch (currentState)
         {
-            // Direct children only
-            foreach (Transform child in transform)
-            {
-                patrolPoints.Add(child.position);
-                // Debug.Log(child.gameObject.name);
-            }
-            // Debug.Log(patrolPoints);
-
-            if (patrolPoints.Count == 0)
-            {
-                Debug.LogWarning("NPC needs at least one patrol point.", this);
-                enabled = false;
-                return;
-            }
-
-            currentPoint = patrolPoints[0];
-            // Debug.Log(currentPoint);
-            // Debug.Log(agent);
-            // Debug.Log(agent.destination);
-            agent.destination = currentPoint;
-        }
-        else
-        {
-            FindClosestTarget();
+            case NPCState.Patrol: Patrol(); break;
+            case NPCState.Flee: Flee(); break;
+            case NPCState.FindFood: FindFood(); break;
         }
     }
 
-    void FixedUpdate()
+    void Patrol()
     {
-        // Wait until the agent has calculated its route to the actual patrol point.
-        if (currentState != NPCState.Patrol || !agent.isOnNavMesh || agent.pathPending)
-        {
-            return;
-        }
+        if (patrolPoints.Count == 0) return;
 
-        // Remaining distance follows the path and ignores the NPC's height offset.
-        if (agent.pathStatus == UnityEngine.AI.NavMeshPathStatus.PathComplete &&
+        if (agent.hasPath && !agent.pathPending && agent.pathStatus == NavMeshPathStatus.PathComplete &&
             agent.remainingDistance <= Mathf.Max(0.5f, agent.stoppingDistance))
         {
-            MoveToNextPoint();
+            patrolIndex++;
+            if (patrolIndex == patrolPoints.Count) patrolIndex = 0;
         }
+        agent.SetDestination(patrolPoints[patrolIndex]);
     }
 
-    void FindClosestTarget()
-    {   
-        // Search for closest target
-        float closestDistance = 1000000.0f;
-        GameObject closestTarget = null;
-
-        GameObject[] targets = GameObject.FindGameObjectsWithTag("NPCTarget");
-
-        foreach (GameObject potentialTarget in targets)
-        {
-            print("Target: " + potentialTarget.name);
-            float distance = Vector3.Distance(transform.position, potentialTarget.transform.position);
-            print("Distance: " + distance);
-
-            if (distance < closestDistance)
-            {
-                closestTarget = potentialTarget;
-                closestDistance = distance;
-            }
-        }   
-
-        if (closestTarget)
-        {
-            print("Target: " + closestTarget.name);
-            agent.destination = closestTarget.transform.position;
-        }
-    }
-
-    void MoveToNextPoint()
+    void Flee()
     {
-        currentPointID += 1;
-        if (currentPointID > patrolPoints.Count - 1)
+        if (player == null) { agent.ResetPath(); return; }
+
+        Vector3 away = transform.position - player.position;
+        away.y = 0;
+        if (away.magnitude >= fleeDistance) { agent.ResetPath(); return; }
+        if (away == Vector3.zero) away = transform.forward;
+
+        // Choose walkable ground away from the player.
+        Vector3 destination = transform.position + away.normalized * fleeDistance;
+        if (NavMesh.SamplePosition(destination, out NavMeshHit hit, 2f, agent.areaMask))
+            agent.SetDestination(hit.position);
+        else
+            agent.ResetPath();
+    }
+
+    void FindFood()
+    {
+        if (targetFood == null || !targetFood.activeInHierarchy)
         {
-            currentPointID = 0;
+            targetFood = FindClosestFood();
+            agent.ResetPath();
+            if (targetFood != null) agent.SetDestination(targetFood.transform.position);
         }
-        currentPoint = patrolPoints[currentPointID];
-        agent.destination = currentPoint;
+        if (targetFood == null || agent.pathPending) return;
+
+        // Give up if the route becomes blocked.
+        if (agent.pathStatus != NavMeshPathStatus.PathComplete)
+        {
+            targetFood = null;
+            agent.ResetPath();
+            return;
+        }
+
+        // Check the path too, so the NPC cannot steal through a wall.
+        if (agent.remainingDistance <= stealingDistance &&
+            Vector3.Distance(transform.position, targetFood.transform.position) <= stealingDistance)
+        {
+            targetFood.SetActive(false);
+            Destroy(targetFood);
+            targetFood = null;
+            agent.ResetPath();
+        }
+    }
+
+    GameObject FindClosestFood()
+    {
+        GameObject closest = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (GameObject food in GameObject.FindGameObjectsWithTag("NPCTarget"))
+        {
+            if (food.GetComponent<EdibleItem>() == null) continue;
+            float distance = Vector3.Distance(transform.position, food.transform.position);
+            if (distance >= closestDistance) continue;
+
+            // Ignore food the NPC cannot reach.
+            NavMeshPath path = new NavMeshPath();
+            if (!agent.CalculatePath(food.transform.position, path) ||
+                path.status != NavMeshPathStatus.PathComplete) continue;
+
+            closest = food;
+            closestDistance = distance;
+        }
+        return closest;
     }
 }
