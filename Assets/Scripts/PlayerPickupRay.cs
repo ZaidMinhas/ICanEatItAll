@@ -1,15 +1,19 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerPickupRay : MonoBehaviour
-{   
+{
     [SerializeField]
-    public float pickupDistanceModifier = 1.0f;
-    private const float DISTANCE_CONST = 2.0f;
+
+    public HungerMeter hungerMeter;
     private bool canPickup = true;
     private bool canInteract = false;
     private GameObject lastEdibleGameObject = null;
     private EdibleItem lastEdibleEntity = null;
+
+    public float DEFAULT_RAY_DISTANCE = 4;
+    public float MIN_RAY_DISTANCE = 2;
 
 
     void Update()
@@ -18,8 +22,12 @@ public class PlayerPickupRay : MonoBehaviour
         {
             RaycastHit hit;
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            
-            if (Physics.Raycast(ray, out hit, pickupDistanceModifier * DISTANCE_CONST)) {
+
+            float pickupScale = MIN_RAY_DISTANCE + (DEFAULT_RAY_DISTANCE - MIN_RAY_DISTANCE) * hungerMeter.Level;
+            pickupScale *= pickupScale;
+            Debug.Log(pickupScale);
+            if (Physics.Raycast(ray, out hit, pickupScale))
+            {
                 EdibleItem edibleEntity = hit.collider.gameObject.GetComponent<EdibleItem>();
                 // Edible entity sighted
                 if (edibleEntity != null)

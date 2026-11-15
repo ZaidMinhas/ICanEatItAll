@@ -95,7 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c2094a2c83e9349b56e7b0f22c17d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
-  hungerMeter: {fileID: 0}
+  hungerMeter: {fileID: 606356732046151684}
+  MIN_SCALE: 0.5
+  DEFAULT_SCALE: 1.8
+  player: {fileID: 6477436816274802085}
 --- !u!114 &606356732046151684
 MonoBehaviour:
   m_ObjectHideFlags: 0

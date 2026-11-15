@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerPickupAction : MonoBehaviour
-{   [SerializeField]
+{
+    [SerializeField]
     private const float GROWTH_CONST = 0.25f;
     public GameObject pickupRayGameObject;
     private PlayerPickupRay pickupRay;
@@ -26,7 +27,6 @@ public class PlayerPickupAction : MonoBehaviour
         {
             print("Destroy" + pickupRay.GetlastEdibleGameObject().name);
             // Change size
-            pickupRay.pickupDistanceModifier = character.GetHungerMeter().Level;
             character.GetHungerMeter().Eat(pickupRay.GetLastEdibleEntity());
             // Eat edible entity
             Destroy(pickupRay.GetlastEdibleGameObject());

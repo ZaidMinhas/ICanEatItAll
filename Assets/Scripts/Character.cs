@@ -1,25 +1,18 @@
+using System;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField]
-    //Character looks and aims
-    //If it aims at an item, it has an outline
-    //It can grab that item to eat it
+    [SerializeField] private HungerMeter hungerMeter;
 
-    //The player has a meter
-    //The meter grows the more you eat
-    //And shrinks if you dont
-
-    //The more the character eats
-    //The bigger it gets
-    //The less it eats the smaller it gets
-    
-    private HungerMeter hungerMeter;
+    public float MIN_SCALE = 0.5f;
+    public float DEFAULT_SCALE = 1.8f;
+    public Transform player;
 
     public void Start()
     {
         hungerMeter = GetComponent<HungerMeter>();
+        player.localScale = Vector3.one * DEFAULT_SCALE;
     }
 
     void Update()
@@ -27,9 +20,12 @@ public class Character : MonoBehaviour
         ChangeSize(hungerMeter.Level);
     }
 
+
+
     public void ChangeSize(float level)
     {
-        transform.localScale = Vector3.one * level;
+        float scale = MIN_SCALE + (DEFAULT_SCALE - MIN_SCALE) * level;
+        player.localScale = Vector3.one * scale;
     }
 
     public HungerMeter GetHungerMeter()
