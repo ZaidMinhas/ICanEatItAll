@@ -237,7 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -871,8 +871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &1569842302914102301
@@ -1324,8 +1324,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &6186538602716381087
@@ -3717,8 +3717,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &861379152359004458
@@ -3868,8 +3868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &3096718039681445660
@@ -4891,8 +4891,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &1747406245868323146
@@ -5042,6 +5042,104 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2223169469071997896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 843784103302089650}
+  - component: {fileID: 3179915164403823689}
+  - component: {fileID: 6408734723580267057}
+  - component: {fileID: 1454241818975643466}
+  m_Layer: 5
+  m_Name: RightHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &843784103302089650
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223169469071997896}
+  m_LocalRotation: {x: -0, y: -0, z: 0.24868982, w: 0.9685832}
+  m_LocalPosition: {x: 0, y: 0, z: 5.72}
+  m_LocalScale: {x: 1, y: 1.4, z: -1.78}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 268359478480074954}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 28.8}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 1896.97, y: -2.7999878}
+  m_SizeDelta: {x: 1011, y: 1156}
+  m_Pivot: {x: 1, y: 0}
+--- !u!222 &3179915164403823689
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223169469071997896}
+  m_CullTransparentMesh: 1
+--- !u!114 &6408734723580267057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223169469071997896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e517f5f44efce8b4cacdf3c84f7aa233, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1454241818975643466
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223169469071997896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 459b8dbcd7ad1e7468bd6f9eec56b3cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2238782304253090938
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,8 +5951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &3905432157287382779
@@ -6674,7 +6772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -6965,8 +7063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &4795350222709148448
@@ -7274,8 +7372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &1090884732042766360
@@ -8616,7 +8714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -8745,8 +8843,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &5681947602963299071
@@ -10651,7 +10749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -10905,8 +11003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &9123276224002868639
@@ -11078,7 +11176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -11586,8 +11684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &7097464891703462598
@@ -12334,7 +12432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -12770,8 +12868,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &5620155228911694213
@@ -13170,8 +13268,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &280543369778519006
@@ -14929,7 +15027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -15148,8 +15246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &4448821456492676720
@@ -16503,7 +16601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -16902,8 +17000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &401666770523645907
@@ -17202,7 +17300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -17458,8 +17556,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &6334572374173067062
@@ -18329,8 +18427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &7991770772729403756
@@ -18480,8 +18578,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &5570662450985463438
@@ -18743,7 +18841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -19710,8 +19808,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.15
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!64 &6791093444311958000
@@ -20134,7 +20232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 0
-  requirement: 0
+  requirement: 2
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -20281,7 +20379,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &11920849768658325
@@ -20427,7 +20525,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &34306112181557065
@@ -21161,7 +21259,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &252290910158745867
@@ -22146,9 +22244,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
+  requirement: 4
   nourishment: 1
-  growthRate: 0.075
+  growthRate: 0.125
   myOutline: {fileID: 0}
 --- !u!64 &3198574974417026344
 MeshCollider:
@@ -22208,7 +22306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
+  requirement: 3
   nourishment: 1
   growthRate: 0.075
   myOutline: {fileID: 0}
@@ -22413,7 +22511,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &293312042501507025
@@ -22559,7 +22657,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &308719803316127157
@@ -22705,7 +22803,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &310195509874898632
@@ -23246,8 +23344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &394289392877144224
@@ -23393,7 +23491,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &450885576401898584
@@ -23539,7 +23637,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &467052465832497428
@@ -23881,7 +23979,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &468618146350104844
@@ -24027,7 +24125,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &541135944361529351
@@ -25034,7 +25132,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &1098897906349780925 stripped
@@ -25572,7 +25670,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &1072362176088638657 stripped
@@ -25914,7 +26012,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &979351040386479304 stripped
@@ -26060,7 +26158,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &865836595196284025 stripped
@@ -26598,7 +26696,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &858556456241353345 stripped
@@ -26744,7 +26842,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &795732519559288677 stripped
@@ -26890,7 +26988,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &761805787185048602 stripped
@@ -27036,7 +27134,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &792123139264133708 stripped
@@ -27182,7 +27280,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &644301347751272802 stripped
@@ -27524,7 +27622,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &603562249731211816 stripped
@@ -27675,7 +27773,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1308663474774453382
@@ -27821,7 +27919,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1347712772209597911
@@ -27967,7 +28065,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1354085098027554276
@@ -28113,7 +28211,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1379052689011218964
@@ -29239,7 +29337,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1461465412485068210
@@ -30169,7 +30267,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1613149818472874274
@@ -30397,7 +30495,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1644335548867841090
@@ -30821,7 +30919,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &1746021499259779692
@@ -30962,7 +31060,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2283787016400248199 stripped
@@ -31304,7 +31402,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2263170193942842870 stripped
@@ -31557,7 +31655,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2166665650901967299 stripped
@@ -31899,7 +31997,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2185896107716619693 stripped
@@ -32045,7 +32143,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2123836502893010595 stripped
@@ -32387,7 +32485,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &1989097732389997086 stripped
@@ -32925,7 +33023,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &1953958686070241542 stripped
@@ -33267,7 +33365,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &1958779564530496480 stripped
@@ -33609,7 +33707,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &1910179172519304046 stripped
@@ -33881,9 +33979,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &2739987618124149469 stripped
 GameObject:
@@ -33945,7 +34043,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3024447148478912482 stripped
@@ -34013,7 +34111,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &4538299516178534623 stripped
@@ -34075,8 +34173,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &4556344991226674881 stripped
@@ -34139,7 +34237,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &4571722936531650130 stripped
@@ -34202,7 +34300,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &5362838904432197091 stripped
@@ -34264,9 +34362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &5476703617607471210 stripped
 GameObject:
@@ -34327,9 +34425,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &5899452636777925555 stripped
 GameObject:
@@ -34391,7 +34489,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &6112799084160497284 stripped
@@ -34454,7 +34552,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &6355762644518554305 stripped
@@ -34517,7 +34615,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &6451917176087634724 stripped
@@ -34580,7 +34678,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &7647013854219473808 stripped
@@ -34642,9 +34740,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &8095068146861329548 stripped
 GameObject:
@@ -34706,8 +34804,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &8902634871049125928 stripped
 GameObject:
@@ -34768,9 +34866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &9168096104531084386 stripped
 GameObject:
@@ -34832,7 +34930,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1001 &2147656241478358062
@@ -35365,7 +35463,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &1783418407198473014 stripped
@@ -35637,9 +35735,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &2621028503901587709 stripped
 GameObject:
@@ -35701,7 +35799,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3143891980493204930 stripped
@@ -35769,7 +35867,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &4369301894068071167 stripped
@@ -35831,8 +35929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &4407795299964288114 stripped
@@ -35895,7 +35993,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &4423313357672170721 stripped
@@ -35958,7 +36056,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &5203071682430568387 stripped
@@ -36020,9 +36118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &5645419763609856586 stripped
 GameObject:
@@ -36083,9 +36181,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &6018699555680006547 stripped
 GameObject:
@@ -36147,7 +36245,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &6236537500483996836 stripped
@@ -36210,7 +36308,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &6516026698604064993 stripped
@@ -36273,7 +36371,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &6615919578357274884 stripped
@@ -36336,7 +36434,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &7513694284982675888 stripped
@@ -36398,9 +36496,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &8218737431391221420 stripped
 GameObject:
@@ -36462,8 +36560,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &8778963241462921736 stripped
 GameObject:
@@ -36524,9 +36622,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &9034846905113230914 stripped
 GameObject:
@@ -36588,7 +36686,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1001 &2276131884153239942
@@ -37132,9 +37230,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
+  requirement: 4
   nourishment: 1
-  growthRate: 0.075
+  growthRate: 0.125
   myOutline: {fileID: 0}
 --- !u!1001 &2364250775816200759
 PrefabInstance:
@@ -37475,7 +37573,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2462472570001092747
@@ -37621,7 +37719,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2494233282361210846
@@ -37767,7 +37865,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2495009812748729476
@@ -37913,7 +38011,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2500851802373373989
@@ -38059,7 +38157,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2508110349672825621
@@ -38401,7 +38499,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2542744064960517164
@@ -38547,7 +38645,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2545221636921752596
@@ -38889,7 +38987,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2593352444967625625
@@ -39035,7 +39133,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2606756923245761893
@@ -39459,7 +39557,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2690538857635220963
@@ -39605,7 +39703,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2707314111620120112
@@ -39947,7 +40045,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &2803968462563810841
@@ -40875,8 +40973,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3431891804048777662 stripped
@@ -41022,7 +41120,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3391901335125692821 stripped
@@ -41168,7 +41266,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3400213128776049379 stripped
@@ -41441,7 +41539,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &757872835052829662 stripped
@@ -41503,8 +41601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &796507970314857811 stripped
@@ -41567,7 +41665,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &811956006155834816 stripped
@@ -41630,7 +41728,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &1331273518605261276 stripped
@@ -41693,7 +41791,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2127731637979233507 stripped
@@ -41760,9 +41858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &4911372865542301581 stripped
 GameObject:
@@ -41824,8 +41922,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &5423557551384702819 stripped
 GameObject:
@@ -41887,7 +41985,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &5761024428078557993 stripped
@@ -41949,9 +42047,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &6800541657124436113 stripped
 GameObject:
@@ -42012,9 +42110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &6965591359988424069 stripped
 GameObject:
@@ -42076,7 +42174,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &7323089269591384242 stripped
@@ -42139,7 +42237,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &7803597401845014976 stripped
@@ -42202,7 +42300,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &7923545274980108325 stripped
@@ -42265,7 +42363,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &8682639790065908587 stripped
@@ -42327,9 +42425,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &9084718807582807778 stripped
 GameObject:
@@ -42390,9 +42488,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1001 &2984124790987197290
 PrefabInstance:
@@ -43512,7 +43610,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3225627149253345121 stripped
@@ -43981,7 +44079,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &608662429244126909 stripped
@@ -44043,8 +44141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &698695372786948259 stripped
@@ -44107,7 +44205,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &719210165247107120 stripped
@@ -44170,7 +44268,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1193247351483716799 stripped
@@ -44233,7 +44331,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2265836952724550016 stripped
@@ -44300,9 +44398,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &5106613084435327726 stripped
 GameObject:
@@ -44364,8 +44462,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &5310516682197377536 stripped
 GameObject:
@@ -44427,7 +44525,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &5550021488217515594 stripped
@@ -44489,9 +44587,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &6671667824926193138 stripped
 GameObject:
@@ -44552,9 +44650,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &7087582232216785126 stripped
 GameObject:
@@ -44616,7 +44714,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &7446192871209512401 stripped
@@ -44679,7 +44777,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &7979556582652849315 stripped
@@ -44742,7 +44840,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &7998657236302759238 stripped
@@ -44805,7 +44903,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &8829316897327150600 stripped
@@ -44867,9 +44965,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &8999741876035492737 stripped
 GameObject:
@@ -44930,9 +45028,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1001 &3175644331537459653
 PrefabInstance:
@@ -45464,7 +45562,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3131841413134434830 stripped
@@ -45613,8 +45711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3028769321504397978 stripped
@@ -45760,7 +45858,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3044031299814540396 stripped
@@ -45906,7 +46004,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &3059992853106683264 stripped
@@ -46248,7 +46346,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &2923911354891024810 stripped
@@ -47379,7 +47477,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &3649338804621131548
@@ -48309,7 +48407,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &3854203307459110132
@@ -48562,7 +48660,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &3897220257794879403
@@ -48904,7 +49002,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &3930425440765905391
@@ -49050,7 +49148,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &3973875529048007205
@@ -49111,7 +49209,10 @@ PrefabInstance:
     - {fileID: 3370715563491881014, guid: bcc7d85f6bab84afa8c2d1c4cbb37b7f, type: 3}
     - {fileID: 1099352752865058979, guid: bcc7d85f6bab84afa8c2d1c4cbb37b7f, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3791869511983946479, guid: bcc7d85f6bab84afa8c2d1c4cbb37b7f, type: 3}
+      insertIndex: 7
+      addedObject: {fileID: 843784103302089650}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6272161892517277934, guid: bcc7d85f6bab84afa8c2d1c4cbb37b7f, type: 3}
       insertIndex: -1
@@ -49323,7 +49424,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1493750812731031543 stripped
@@ -49385,8 +49486,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1527737217623468410 stripped
@@ -49449,7 +49550,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1547824915550081513 stripped
@@ -49512,7 +49613,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &1764084646918858233 stripped
@@ -49575,7 +49676,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &2443721621845247054 stripped
@@ -49637,9 +49738,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &4638214742535617720 stripped
 GameObject:
@@ -49700,9 +49801,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &5894396149226090240 stripped
 GameObject:
@@ -49763,9 +49864,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &6159244216155859786 stripped
 GameObject:
@@ -49827,7 +49928,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &6491636193620485028 stripped
@@ -49890,8 +49991,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &6930257797598532299 stripped
 GameObject:
@@ -49952,9 +50053,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &7368084438208069442 stripped
 GameObject:
@@ -50015,9 +50116,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &8247688908395472361 stripped
 GameObject:
@@ -50079,7 +50180,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &8342998929278716940 stripped
@@ -50142,7 +50243,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &8907708592145917083 stripped
@@ -50205,7 +50306,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &9121090307374881196 stripped
@@ -50268,7 +50369,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1001 &4018388383410126842
@@ -50496,7 +50597,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4021132286732244600
@@ -50642,7 +50743,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4027029215743688328
@@ -51106,7 +51207,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &910626336074425221 stripped
@@ -51174,7 +51275,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1885260786371801653 stripped
@@ -51237,7 +51338,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1900709098138208934 stripped
@@ -51300,7 +51401,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &1990740735341995192 stripped
@@ -51362,8 +51463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &3383190182545727233 stripped
@@ -51425,9 +51526,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &5711806698452002807 stripped
 GameObject:
@@ -51488,9 +51589,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &6128478718905841899 stripped
 GameObject:
@@ -51552,8 +51653,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &6512294871810994181 stripped
 GameObject:
@@ -51615,7 +51716,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &6834014816885027919 stripped
@@ -51677,9 +51778,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &7591634761106629645 stripped
 GameObject:
@@ -51740,9 +51841,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &8013996014799210884 stripped
 GameObject:
@@ -51803,9 +51904,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &8182698690669675235 stripped
 GameObject:
@@ -51867,7 +51968,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &8396081419519033300 stripped
@@ -51930,7 +52031,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &8994285522266511171 stripped
@@ -51993,7 +52094,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &9038718992640540326 stripped
@@ -52056,7 +52157,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4075343092656126828
@@ -52197,7 +52298,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &4540824203970043015 stripped
@@ -52343,7 +52444,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &4559076046141642562 stripped
@@ -52881,7 +52982,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &4481378667365034005 stripped
@@ -53501,7 +53602,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &4345644913251790860 stripped
@@ -53647,7 +53748,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &4304401559698404472 stripped
@@ -53920,7 +54021,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &641507256426619426 stripped
@@ -53988,7 +54089,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &2172013177679743745 stripped
@@ -54051,7 +54152,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &2192668158880002962 stripped
@@ -54114,7 +54215,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &2298153601908188447 stripped
@@ -54176,8 +54277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &3078112674912542374 stripped
@@ -54239,9 +54340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &5404406751923381840 stripped
 GameObject:
@@ -54302,9 +54403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &5857103166249400652 stripped
 GameObject:
@@ -54366,8 +54467,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &6526677812856763880 stripped
 GameObject:
@@ -54428,9 +54529,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &6783677841580257698 stripped
 GameObject:
@@ -54492,7 +54593,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &7742611670357297187 stripped
@@ -54554,9 +54655,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &7862934442622625194 stripped
 GameObject:
@@ -54617,9 +54718,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &8124767718961348211 stripped
 GameObject:
@@ -54681,7 +54782,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &8487860031513658180 stripped
@@ -54744,7 +54845,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &8689195923765614308 stripped
@@ -54807,7 +54908,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &8731316017354669825 stripped
@@ -54870,7 +54971,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4366415586701562978
@@ -55011,7 +55112,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &4256507113660887945 stripped
@@ -55745,7 +55846,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &4154380710093982072 stripped
@@ -56092,7 +56193,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4679362522125909202
@@ -56238,7 +56339,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4728818785393864208
@@ -56580,7 +56681,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4750877116187893301
@@ -56726,7 +56827,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4763577450865485896
@@ -56872,7 +56973,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &4815239064657380223
@@ -57214,7 +57315,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &5052581155976962139
@@ -57943,7 +58044,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5696978810858480637 stripped
@@ -58677,7 +58778,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5595477790111834741 stripped
@@ -58823,7 +58924,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5605180175252426061 stripped
@@ -58969,7 +59070,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5618249894062825865 stripped
@@ -59118,8 +59219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5573590496326639537 stripped
@@ -59265,7 +59366,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5478795472377626555 stripped
@@ -59607,7 +59708,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5497932796191976815 stripped
@@ -59753,7 +59854,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5502253419701366729 stripped
@@ -60095,7 +60196,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5420017633046574914 stripped
@@ -60437,7 +60538,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5352877974327157274 stripped
@@ -60583,7 +60684,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5309344932918562344 stripped
@@ -60925,7 +61026,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5272914920101136631 stripped
@@ -62840,7 +62941,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &5896512508341498263
@@ -63182,7 +63283,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &5956744298353966269
@@ -63524,7 +63625,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &5959623791650899381
@@ -63670,7 +63771,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &5960721411220981600
@@ -63816,7 +63917,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &5969356137635915499
@@ -63962,7 +64063,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &5978885277074749405
@@ -64500,7 +64601,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &6084194094723655555
@@ -64842,7 +64943,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &6167561361830200623
@@ -65184,7 +65285,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &6229780449282289783
@@ -65330,7 +65431,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &6259414476963983357
@@ -65476,7 +65577,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &6343129551403782882
@@ -65617,7 +65718,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6885418637818721545 stripped
@@ -66177,7 +66278,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6823662781050489264 stripped
@@ -66323,7 +66424,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6833105958343693574 stripped
@@ -66469,7 +66570,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6797342245176159865 stripped
@@ -66615,7 +66716,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6757162415816860157 stripped
@@ -66761,7 +66862,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6762791821434686058 stripped
@@ -66907,7 +67008,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6772365931865172940 stripped
@@ -67331,7 +67432,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6635372203090247882 stripped
@@ -67477,7 +67578,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6617718605074081108 stripped
@@ -68318,7 +68419,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6493993166458719643 stripped
@@ -68464,7 +68565,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6381722548861503716 stripped
@@ -68692,7 +68793,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &6346730732672839162 stripped
@@ -68964,9 +69065,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &1050400557201159403 stripped
 GameObject:
@@ -69027,9 +69128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &1391046839799394098 stripped
 GameObject:
@@ -69091,7 +69192,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1605510387782373893 stripped
@@ -69154,7 +69255,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &1920461034921274944 stripped
@@ -69217,7 +69318,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &1953222128366913445 stripped
@@ -69280,7 +69381,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &2922075038510348049 stripped
@@ -69342,9 +69443,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &3658498251674363917 stripped
 GameObject:
@@ -69406,8 +69507,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &4115848530565555369 stripped
 GameObject:
@@ -69468,9 +69569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &4443209520993804515 stripped
 GameObject:
@@ -69532,7 +69633,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &5276709828753248231 stripped
@@ -69594,9 +69695,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &7247568784595998300 stripped
 GameObject:
@@ -69658,7 +69759,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7740020873906140003 stripped
@@ -69726,7 +69827,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &8964883505035736158 stripped
@@ -69788,8 +69889,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &9054925690276534848 stripped
@@ -69852,7 +69953,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &9070505390587142867 stripped
@@ -69915,7 +70016,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &6919734553715019482
@@ -70257,7 +70358,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7034115658801114363
@@ -70403,7 +70504,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7052231614462886452
@@ -70745,7 +70846,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7084967561300756504
@@ -70891,7 +70992,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7146129472683542175
@@ -71233,7 +71334,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7155304050762103776
@@ -71575,7 +71676,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7182317606754405288
@@ -71721,7 +71822,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7191402329927299934
@@ -71867,7 +71968,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7201227747901776323
@@ -72013,7 +72114,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7201831002815206891
@@ -72587,9 +72688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &444631591299704759 stripped
 GameObject:
@@ -72651,7 +72752,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &668588082129137497 stripped
@@ -72714,8 +72815,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &1373490491686662213 stripped
 GameObject:
@@ -72776,9 +72877,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &2349164567932944625 stripped
 GameObject:
@@ -72840,7 +72941,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &2388047677722716436 stripped
@@ -72903,7 +73004,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &2940613251911772262 stripped
@@ -72966,7 +73067,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &3298111192401843537 stripped
@@ -73029,7 +73130,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &3710008793601498678 stripped
@@ -73091,9 +73192,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &3823855335181202367 stripped
 GameObject:
@@ -73154,9 +73255,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &5056235506913778964 stripped
 GameObject:
@@ -73218,7 +73319,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &5071683266702714247 stripped
@@ -73281,7 +73382,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &5182376104148873994 stripped
@@ -73343,8 +73444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &5416396911204444420 stripped
@@ -73407,7 +73508,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5830127896758678583 stripped
@@ -73475,7 +73576,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &8266487094424864947 stripped
@@ -73537,9 +73638,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1001 &7256016909213444546
 PrefabInstance:
@@ -73880,7 +73981,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7262633941753521766
@@ -74147,9 +74248,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &474569358618046217 stripped
 GameObject:
@@ -74211,7 +74312,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &719143359116912615 stripped
@@ -74274,8 +74375,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &1419260679776336123 stripped
 GameObject:
@@ -74336,9 +74437,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &2316060739773696079 stripped
 GameObject:
@@ -74400,7 +74501,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &2421152054836240810 stripped
@@ -74463,7 +74564,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &2914546315098759384 stripped
@@ -74526,7 +74627,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &3276539039032368623 stripped
@@ -74589,7 +74690,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &3729329130312963720 stripped
@@ -74651,9 +74752,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &3867664539899558657 stripped
 GameObject:
@@ -74714,9 +74815,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &5086533364156159402 stripped
 GameObject:
@@ -74778,7 +74879,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &5106969061875051833 stripped
@@ -74841,7 +74942,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &5140537751131093940 stripped
@@ -74903,8 +75004,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &5446905878823199162 stripped
@@ -74967,7 +75068,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5788640838909574281 stripped
@@ -75035,7 +75136,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &8216204492432523277 stripped
@@ -75097,9 +75198,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1001 &7276817083306868255
 PrefabInstance:
@@ -75440,7 +75541,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7335885546793255169
@@ -75586,7 +75687,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7349417275399544287
@@ -75928,7 +76029,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7420749085216998246
@@ -76074,7 +76175,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7456015913368251853
@@ -76416,7 +76517,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7466480177962355936
@@ -76758,7 +76859,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &7519478760583378851
@@ -77291,7 +77392,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &8023492216261128407 stripped
@@ -77437,7 +77538,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7942989236078631414 stripped
@@ -77779,7 +77880,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7823520694694488654 stripped
@@ -78121,7 +78222,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7805619478710554183 stripped
@@ -78463,7 +78564,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7677250427079323089 stripped
@@ -79197,7 +79298,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7616180519984623048 stripped
@@ -79539,7 +79640,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7541578003781550341 stripped
@@ -79881,7 +79982,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7566006559166020038 stripped
@@ -80027,7 +80128,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &7510639383848981712 stripped
@@ -80374,7 +80475,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8140910518405086969
@@ -80520,7 +80621,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8144570698568219283
@@ -80751,8 +80852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8236885432748764852
@@ -80898,7 +80999,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8247285222859012667
@@ -81240,7 +81341,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8305040699471670409
@@ -81582,7 +81683,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8354506767185836902
@@ -81728,7 +81829,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8416879488872861490
@@ -82658,7 +82759,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8557889606060497052
@@ -82804,7 +82905,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1001 &8602276147682975251
@@ -83141,7 +83242,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &9219150107911855754 stripped
@@ -84071,7 +84172,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &9073383604884487924 stripped
@@ -84217,7 +84318,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &9009610082017328731 stripped
@@ -84559,7 +84660,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &8901339398863846028 stripped
@@ -85027,9 +85128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &1369153510587041101 stripped
 GameObject:
@@ -85091,8 +85192,8 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  nourishment: 0.05
+  growthRate: 0.01
   myOutline: {fileID: 0}
 --- !u!1 &1791240184396335593 stripped
 GameObject:
@@ -85153,9 +85254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &2048256705943113123 stripped
 GameObject:
@@ -85217,7 +85318,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &2971216713148380194 stripped
@@ -85279,9 +85380,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1 &3411028831231662507 stripped
 GameObject:
@@ -85342,9 +85443,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 1
   usesOutline: 1
-  requirement: 0
-  nourishment: 0.2
-  growthRate: 0.05
+  requirement: 3
+  nourishment: 0.3
+  growthRate: 0.1
   myOutline: {fileID: 0}
 --- !u!1 &3641248949267399282 stripped
 GameObject:
@@ -85406,7 +85507,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.05
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &3999836571250655045 stripped
@@ -85469,7 +85570,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &4241986463975811813 stripped
@@ -85532,7 +85633,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &4279391860176388864 stripped
@@ -85595,7 +85696,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &4994813536274807580 stripped
@@ -85658,7 +85759,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &5381729959360175651 stripped
@@ -85726,7 +85827,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &6639789657871830931 stripped
@@ -85789,7 +85890,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &6659737441928804096 stripped
@@ -85852,7 +85953,7 @@ MonoBehaviour:
   destroyParents: 1
   usesOutline: 1
   requirement: 0
-  nourishment: 0.005
+  nourishment: 0.05
   growthRate: 0.5
   myOutline: {fileID: 0}
 --- !u!1 &6749777738457733406 stripped
@@ -85914,8 +86015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
+  requirement: 2
+  nourishment: 0.1
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!1 &7565782092413624999 stripped
@@ -85977,9 +86078,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EdibleItem
   destroyParents: 0
   usesOutline: 1
-  requirement: 0
-  nourishment: 1
-  growthRate: 0.075
+  requirement: 2
+  nourishment: 0.3
+  growthRate: 0.15
   myOutline: {fileID: 0}
 --- !u!1001 &9139406422702362397
 PrefabInstance:
@@ -86315,7 +86416,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &8690098862898893160 stripped
@@ -86461,7 +86562,7 @@ MonoBehaviour:
   destroyParents: 0
   usesOutline: 1
   requirement: 0
-  nourishment: 1
+  nourishment: 0.01
   growthRate: 0.075
   myOutline: {fileID: 0}
 --- !u!4 &8704446514601545105 stripped
