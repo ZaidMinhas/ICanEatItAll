@@ -18,7 +18,7 @@ public class FoodLevel : MonoBehaviour
         {
             // hungerMeter = player.GetComponent<HungerMeter>();
             hungerMeter = FindAnyObjectByType<HungerMeter>();
-            Debug.Log(hungerMeter.name);
+            // Debug.Log(hungerMeter.name);
         }
         else Debug.Log("No HungerMeter found");
     }
