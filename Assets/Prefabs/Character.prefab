@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 3314690835098843289}
   - component: {fileID: 4327496726738754931}
   - component: {fileID: 606356732046151684}
+  - component: {fileID: 7805274918062641901}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -124,6 +125,22 @@ MonoBehaviour:
   growthRate: 0
   targetLevel: 0
   heldItem: {fileID: 0}
+--- !u!114 &7805274918062641901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7979970228853009855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b8c910d7184e3b944cd0140df5492a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::GameState
+  currentState: 0
+  onStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &756389898410791891
 PrefabInstance:
   m_ObjectHideFlags: 0
