@@ -21,6 +21,11 @@ public class NPCMovement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        if (player == null)
+        {
+            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+            if (playerObject != null) player = playerObject.transform;
+        }
         // Child objects mark the patrol positions when the game starts.
         foreach (Transform point in transform) patrolPoints.Add(point.position);
     }
@@ -28,6 +33,7 @@ public class NPCMovement : MonoBehaviour
     void Update()
     {
         if (!agent.isOnNavMesh) return;
+        ChooseState();
 
         // Forget the old destination when choosing a different state.
         if (currentState != previousState)
@@ -43,6 +49,27 @@ public class NPCMovement : MonoBehaviour
             case NPCState.Flee: Flee(); break;
             case NPCState.FindFood: FindFood(); break;
         }
+    }
+
+    void ChooseState()
+    {
+        if (player != null)
+        {
+            Vector3 away = transform.position - player.position;
+            away.y = 0;
+            // Start fleeing nearby, but keep running until there is a bigger gap.
+            float dangerDistance = fleeDistance / 2f;
+            if (currentState == NPCState.Flee) dangerDistance = fleeDistance;
+            if (away.magnitude < dangerDistance)
+            {
+                currentState = NPCState.Flee;
+                return;
+            }
+        }
+
+        bool hasFood = targetFood != null && targetFood.activeInHierarchy;
+        if (!hasFood) hasFood = FindClosestFood() != null;
+        currentState = hasFood ? NPCState.FindFood : NPCState.Patrol;
     }
 
     void Patrol()
