@@ -6,6 +6,7 @@ public class PlayerPickupAction : MonoBehaviour
     private const float GROWTH_CONST = 0.25f;
     public GameObject pickupRayGameObject;
     private PlayerPickupRay pickupRay;
+    private Character character;
 
     public void Start()
     {
@@ -13,6 +14,8 @@ public class PlayerPickupAction : MonoBehaviour
         {
             pickupRay = pickupRayGameObject.GetComponent<PlayerPickupRay>();
         }
+
+        character = GetComponentInParent<Character>();
     }
 
     public void OnInteract(InputValue inputValue)
@@ -21,12 +24,12 @@ public class PlayerPickupAction : MonoBehaviour
         print(pickupRay.name + " can interact");
         if (pickupRay.GetCanInteract())
         {
+            print("Destroy" + pickupRay.GetlastEdibleGameObject().name);
+            // Change size
+            pickupRay.pickupDistanceModifier = character.GetHungerMeter().Level;
+            character.GetHungerMeter().Eat(pickupRay.GetLastEdibleEntity());
             // Eat edible entity
             Destroy(pickupRay.GetlastEdibleGameObject());
-            print("Destroy" + pickupRay.GetlastEdibleGameObject().name);
-
-            GetComponentInParent<Character>().ChangeSize(pickupRay.GetLastEdibleEntity().nourishment * GROWTH_CONST);
-            pickupRay.pickupDistanceModifier += pickupRay.GetLastEdibleEntity().nourishment * GROWTH_CONST;
         }
     }
 

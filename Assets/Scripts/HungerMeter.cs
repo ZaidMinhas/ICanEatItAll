@@ -5,7 +5,9 @@ public enum HungerState { None, Rest, Growing, Decaying, Death }
 
 public class HungerMeter : MonoBehaviour
 {
-    protected float level = 0;
+    [SerializeField]protected float level = 0;
+    [SerializeField] protected HungerState currState = HungerState.None;
+
     public float Level
     {
         get
@@ -51,7 +53,6 @@ public class HungerMeter : MonoBehaviour
 
     [SerializeField] protected float targetLevel = 0;
     [SerializeField] protected EdibleItem heldItem;
-    [SerializeField] protected HungerState currState = HungerState.None;
 
 
     public void Eat(EdibleItem item)

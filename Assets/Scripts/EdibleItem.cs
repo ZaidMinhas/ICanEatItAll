@@ -6,7 +6,7 @@ public class EdibleItem : MonoBehaviour
     public int requirement = 0;
     public float nourishment = 1;
 
-    public float growthRate = 1;
+    public float growthRate = 0.075f;
 
     public Outline myOutline;
 
