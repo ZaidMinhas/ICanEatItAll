@@ -3,10 +3,12 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public enum NPCState { Patrol, Flee, FindFood }
+public enum NPCRole { Server, Stealer }
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class NPCMovement : MonoBehaviour
 {
+    [SerializeField] private NPCRole role = NPCRole.Server;
     public NPCState currentState;
     public Transform player;
     [Min(0.1f)] public float fleeDistance = 5f;
@@ -15,6 +17,7 @@ public class NPCMovement : MonoBehaviour
 
     private NavMeshAgent agent;
     private GameObject targetFood;
+    [SerializeField] private GameObject[] spawnableFoods = {};
     private int patrolIndex;
     private NPCState previousState;
 
@@ -70,16 +73,29 @@ public class NPCMovement : MonoBehaviour
 
         bool hasFood = targetFood != null && targetFood.activeInHierarchy;
         if (!hasFood) hasFood = FindClosestFood() != null;
-        currentState = hasFood ? NPCState.FindFood : NPCState.Patrol;
+        if (role == NPCRole.Stealer && hasFood)
+        {
+            currentState = NPCState.FindFood;
+            // currentState = hasFood ? NPCState.FindFood : NPCState.Patrol;
+        }
+        else
+        {
+            currentState = NPCState.Patrol;
+        }
     }
 
     void Patrol()
     {
         if (patrolPoints.Count == 0) return;
 
+        // Destination reached
         if (agent.hasPath && !agent.pathPending && agent.pathStatus == NavMeshPathStatus.PathComplete &&
             agent.remainingDistance <= Mathf.Max(0.5f, agent.stoppingDistance))
         {
+            // Spawn Food
+            SpawnFood();
+
+            // Go to next point
             patrolIndex++;
             if (patrolIndex == patrolPoints.Count) patrolIndex = 0;
         }
@@ -153,5 +169,11 @@ public class NPCMovement : MonoBehaviour
             closestDistance = distance;
         }
         return closest;
+    }
+
+    void SpawnFood()
+    {
+        int itemID = Random.Range(0, spawnableFoods.Length -1);
+        Instantiate(spawnableFoods[itemID], patrolPoints[patrolIndex], Quaternion.identity);
     }
 }
