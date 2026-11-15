@@ -18,6 +18,8 @@ namespace ICanEatItAll.Audio
         private int nextHandle;
         private bool dirty;
         private float saveAt;
+        private bool hasFocus = true;
+        private bool applicationPaused;
 
         private sealed class Voice
         {
@@ -28,6 +30,7 @@ namespace ICanEatItAll.Audio
             public bool following;
             public float gain;
             public int handle;
+            public int lastSample;
         }
 
         public static AudioManager Instance
@@ -53,8 +56,7 @@ namespace ICanEatItAll.Audio
         {
             if (instance != null && instance != this) { Destroy(gameObject); return; }
             instance = this;
-            // Keep music running when the game window loses focus.
-            Application.runInBackground = true;
+            Application.runInBackground = false;
             DontDestroyOnLoad(gameObject);
             master = ReadLevel("Master", 1f);
             masterMuted = PlayerPrefs.GetInt(PrefPrefix + "MasterMuted", 0) != 0;
@@ -98,7 +100,7 @@ namespace ICanEatItAll.Audio
             if (sound == null) return 0;
             if (sound.category == SoundCategory.Music)
                 foreach (Voice current in voices)
-                    if (current.sound == sound && current.handle != 0 && (current.source.isPlaying || AudioListener.pause)) return current.handle;
+                    if (current.sound == sound && current.handle != 0 && (current.source.loop || current.source.isPlaying || AudioListener.pause)) return current.handle;
             AudioClip clip = sound.PickClip();
             if (clip == null) { Debug.LogWarning("No clips assigned to sound: " + sound.name, sound); return 0; }
             return PlayInternal(sound, clip, sound.category, sound.volume,
@@ -145,6 +147,7 @@ namespace ICanEatItAll.Audio
             voice.following = follow != null;
             voice.gain = Mathf.Clamp01(volume);
             voice.handle = ++nextHandle;
+            voice.lastSample = 0;
             voice.source.clip = clip;
             voice.source.pitch = pitch;
             voice.source.loop = loop;
@@ -162,7 +165,7 @@ namespace ICanEatItAll.Audio
             return voice.handle;
         }
 
-        public bool IsPlaying(int handle) => handle != 0 && voices.Exists(v => v.handle == handle && (v.source.isPlaying || AudioListener.pause));
+        public bool IsPlaying(int handle) => handle != 0 && voices.Exists(v => v.handle == handle && (v.source.loop || v.source.isPlaying || AudioListener.pause));
         public void Stop(int handle)
         {
             foreach (Voice voice in voices) if (voice.handle == handle) Release(voice);
@@ -190,8 +193,15 @@ namespace ICanEatItAll.Audio
                 if (voice.handle == 0) continue;
                 if (voice.following && voice.follow == null) { Release(voice); continue; }
                 if (voice.follow != null) voice.source.transform.position = voice.follow.position;
-                // Listener pause makes isPlaying false; keep those voices until it resumes.
-                if (!AudioListener.pause && !voice.source.isPlaying) Release(voice);
+                // Focus loss can temporarily stop audio. Do not discard its clip or handle.
+                if (!hasFocus || applicationPaused || AudioListener.pause) continue;
+                if (voice.source.isPlaying) voice.lastSample = voice.source.timeSamples;
+                else if (voice.source.loop)
+                {
+                    voice.source.Play();
+                    voice.source.timeSamples = voice.lastSample;
+                }
+                else Release(voice);
             }
             if (dirty && Time.realtimeSinceStartup >= saveAt) SaveSettings();
         }
@@ -207,7 +217,8 @@ namespace ICanEatItAll.Audio
             }
             PlayerPrefs.Save(); dirty = false;
         }
-        private void OnApplicationPause(bool paused) { if (paused) SaveSettings(); }
+        private void OnApplicationFocus(bool focused) { hasFocus = focused; }
+        private void OnApplicationPause(bool paused) { applicationPaused = paused; if (paused) SaveSettings(); }
         private void OnApplicationQuit() { quitting = true; SaveSettings(); }
         private void OnDestroy() { if (instance == this) { SaveSettings(); instance = null; } }
     }
