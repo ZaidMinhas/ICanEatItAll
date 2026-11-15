@@ -11,6 +11,8 @@ public class MainMenuCanvas : MonoBehaviour
 
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SoundDefinition music = Resources.Load<SoundDefinition>("Sounds/MenuMusic");
         if (music != null) menuMusicHandle = AudioManager.Instance.Play(music);
     }
