@@ -50,4 +50,4 @@ The manager reuses up to 48 AudioSources. At capacity it recycles the oldest one
 
 ## Verification
 
-Open **Window > General > Test Runner > PlayMode** and run `ICanEatItAll.Audio.Tests`. Tests cover live category gain and mute, music replacement, moving emitter cleanup, voice limits, stale handles, menu restoration, and saved settings. For a listening check, enter a scene with an Audio Listener, play a sound from Sound Control, and adjust the category and master sliders.
+Enter a scene with an Audio Listener, play a sound from Sound Control, and adjust the category and master sliders. Check that mute restores the previous volume and that the settings are preserved after leaving and re-entering Play mode.

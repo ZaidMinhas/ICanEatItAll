@@ -1,6 +1,0 @@
-{
-    "name": "ICanEatItAll.Audio.Tests",
-    "references": ["ICanEatItAll.Audio"],
-    "optionalUnityReferences": ["TestAssemblies"],
-    "autoReferenced": false
-}
