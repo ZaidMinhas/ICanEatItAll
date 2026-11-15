@@ -24,7 +24,7 @@ public class PlayerPickupRay : MonoBehaviour
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
 
             float pickupScale = MIN_RAY_DISTANCE + (DEFAULT_RAY_DISTANCE - MIN_RAY_DISTANCE) * hungerMeter.Level;
-            pickupScale *= pickupScale;
+            // pickupScale *= pickupScale;
             Debug.Log(pickupScale);
             if (Physics.Raycast(ray, out hit, pickupScale))
             {
