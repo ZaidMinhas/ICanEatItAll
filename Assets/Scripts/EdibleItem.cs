@@ -4,7 +4,9 @@ using UnityEngine;
 public class EdibleItem : MonoBehaviour
 {
     public int requirement = 0;
-    public int nourishment = 1;
+    public float nourishment = 1;
+
+    public float growthRate = 0.075f;
 
     public Outline myOutline;
 
@@ -23,5 +25,10 @@ public class EdibleItem : MonoBehaviour
         {
             myOutline.OutlineMode = Outline.Mode.OutlineHidden;
         }
+    }
+
+    internal void ChangeOutlineColor(Color newColor)
+    {
+        myOutline.OutlineColor = newColor;
     }
 }

@@ -3,13 +3,17 @@ using UnityEngine.UIElements;
 
 public class NPCMovement : MonoBehaviour
 {
+    [SerializeField]
+    private Vector3[] destinations;
+    private Vector3 currentPoint;
+    private int currentPointID = 0;
     private Transform targetPosition;
     private UnityEngine.AI.NavMeshAgent agent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        FindClosestTarget();
+        // FindClosestTarget();
     }
 
     // Update is called once per frame
@@ -47,5 +51,10 @@ public class NPCMovement : MonoBehaviour
             print("Target: " + closestTarget.name);
             agent.destination = closestTarget.transform.position;
         }
+    }
+
+    void Patrol()
+    {
+        
     }
 }

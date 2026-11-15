@@ -44,8 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1afc889244724a244a68ce0a8ea9af58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  canPickup: 1
-  maxPickupDistance: 2
+  hungerMeter: {fileID: 606356732046151684}
+  DEFAULT_RAY_DISTANCE: 4
+  MIN_RAY_DISTANCE: 2
 --- !u!1 &7979970228853009855
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,6 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3314690835098843289}
   - component: {fileID: 4327496726738754931}
+  - component: {fileID: 606356732046151684}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -95,6 +97,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c2094a2c83e9349b56e7b0f22c17d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Character
+  hungerMeter: {fileID: 606356732046151684}
+  MIN_SCALE: 0.5
+  DEFAULT_SCALE: 1.8
+  player: {fileID: 6477436816274802085}
+--- !u!114 &606356732046151684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7979970228853009855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d5c1e02d1b066c45a51c0e3132caf54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  level: 1
+  currState: 0
+  isDebug: 0
+  REST_DURATION_SCALE: 10
+  DECAY_RATE: 0.1
+  restDuration: 0
+  restTimeout: 0
+  decayRate: 0
+  growthRate: 0
+  targetLevel: 0
+  heldItem: {fileID: 0}
 --- !u!1001 &756389898410791891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -271,6 +300,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 6b911390c5825014e8377183a7837d3f, type: 2}
+    - target: {fileID: 8233899629508314609, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: pickupRay
+      value: 
+      objectReference: {fileID: 5125860549427786643}
+    - target: {fileID: 8233899629508314609, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: pickupRayGameObject
+      value: 
+      objectReference: {fileID: 6364885584373031959}
     - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
@@ -352,7 +389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.41
+      value: 1.4100014
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.z
@@ -364,15 +401,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -385,6 +422,10 @@ PrefabInstance:
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
+      propertyPath: field of view
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: far clip plane

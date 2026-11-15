@@ -1,13 +1,19 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerPickupRay : MonoBehaviour
 {
-    public bool canPickup = true;
-    public float maxPickupDistance = 2.0f;
-    
-    public bool canInteract = false;
+    [SerializeField]
 
+    public HungerMeter hungerMeter;
+    private bool canPickup = true;
+    private bool canInteract = false;
+    private GameObject lastEdibleGameObject = null;
     private EdibleItem lastEdibleEntity = null;
+
+    public float DEFAULT_RAY_DISTANCE = 4;
+    public float MIN_RAY_DISTANCE = 2;
 
 
     void Update()
@@ -16,9 +22,12 @@ public class PlayerPickupRay : MonoBehaviour
         {
             RaycastHit hit;
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            
-            if (Physics.Raycast(ray, out hit, maxPickupDistance)) {
 
+            float pickupScale = MIN_RAY_DISTANCE + (DEFAULT_RAY_DISTANCE - MIN_RAY_DISTANCE) * hungerMeter.Level;
+            // pickupScale *= pickupScale;
+            Debug.Log(pickupScale);
+            if (Physics.Raycast(ray, out hit, pickupScale))
+            {
                 EdibleItem edibleEntity = hit.collider.gameObject.GetComponent<EdibleItem>();
                 // Edible entity sighted
                 if (edibleEntity != null)
@@ -27,7 +36,9 @@ public class PlayerPickupRay : MonoBehaviour
                     if (edibleEntity != lastEdibleEntity || lastEdibleEntity.myOutline.OutlineMode == Outline.Mode.OutlineHidden)
                     {
                         lastEdibleEntity = edibleEntity;
+                        lastEdibleGameObject = hit.collider.gameObject;
                         edibleEntity.ToggleOutline(true);
+
                         canInteract = true;
                     }
                 }
@@ -48,5 +59,25 @@ public class PlayerPickupRay : MonoBehaviour
                 }
             }
         }
+    }
+
+    public EdibleItem GetLastEdibleEntity()
+    {
+        return lastEdibleEntity;
+    }
+
+    public bool GetCanInteract()
+    {
+        return canInteract;
+    }
+
+    public GameObject GetlastEdibleGameObject()
+    {
+        return lastEdibleGameObject;
+    }
+
+    public bool GetCanPickup()
+    {
+        return canPickup;
     }
 }
