@@ -4,7 +4,9 @@ using UnityEngine;
 public class EdibleItem : MonoBehaviour
 {
     public int requirement = 0;
-    public int nourishment = 1;
+    public float nourishment = 1;
+
+    public float growthRate = 1;
 
     public Outline myOutline;
 
