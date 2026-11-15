@@ -11,7 +11,7 @@ public class GameState : MonoBehaviour
 
     // Call these from your own gameplay code, buttons, or events.
     public void Win() { SetState(GameStatus.Won); }
-    public void Lose() { SetState(GameStatus.Lost); }
+    public void Lose() {SetState(GameStatus.Lost);}
     public void ResetState() { SetState(GameStatus.Playing); }
 
     public void SetState(GameStatus state)
