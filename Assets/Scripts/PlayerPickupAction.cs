@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerPickupAction : MonoBehaviour
 {   [SerializeField]
-    private GameObject pickupRayGameObject;
+    private const float GROWTH_CONST = 0.25f;
+    public GameObject pickupRayGameObject;
     private PlayerPickupRay pickupRay;
 
     public void Start()
@@ -18,11 +19,14 @@ public class PlayerPickupAction : MonoBehaviour
     {
         print("Interact");
         print(pickupRay.name + " can interact");
-        if (pickupRay.canInteract)
+        if (pickupRay.GetCanInteract())
         {
             // Eat edible entity
-            Destroy(pickupRay.lastEdibleGameObject);
-            print("Destroy" + pickupRay.lastEdibleGameObject.name);
+            Destroy(pickupRay.GetlastEdibleGameObject());
+            print("Destroy" + pickupRay.GetlastEdibleGameObject().name);
+
+            GetComponentInParent<Character>().ChangeSize(pickupRay.GetLastEdibleEntity().nourishment * GROWTH_CONST);
+            pickupRay.pickupDistanceModifier += pickupRay.GetLastEdibleEntity().nourishment * GROWTH_CONST;
         }
     }
 

@@ -2,12 +2,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerPickupRay : MonoBehaviour
-{
-    public bool canPickup = true;
-    public float maxPickupDistance = 2.0f;
-    
-    public bool canInteract = false;
-    public GameObject lastEdibleGameObject = null;
+{   
+    [SerializeField]
+    public float pickupDistanceModifier = 1.0f;
+    private const float DISTANCE_CONST = 2.0f;
+    private bool canPickup = true;
+    private bool canInteract = false;
+    private GameObject lastEdibleGameObject = null;
     private EdibleItem lastEdibleEntity = null;
 
 
@@ -18,7 +19,7 @@ public class PlayerPickupRay : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             
-            if (Physics.Raycast(ray, out hit, maxPickupDistance)) {
+            if (Physics.Raycast(ray, out hit, pickupDistanceModifier * DISTANCE_CONST)) {
                 EdibleItem edibleEntity = hit.collider.gameObject.GetComponent<EdibleItem>();
                 // Edible entity sighted
                 if (edibleEntity != null)
@@ -52,14 +53,23 @@ public class PlayerPickupRay : MonoBehaviour
         }
     }
 
-    // public void OnInteract(InputAction.CallbackContext context)
-    // {
-    //     print("Interact");
-    //     if (canInteract)
-    //     {
-    //         // Eat edible entity
-    //         Destroy(lastEdibleGameObject);
-    //         print("Destroy" + lastEdibleGameObject.name);
-    //     }
-    // }
+    public EdibleItem GetLastEdibleEntity()
+    {
+        return lastEdibleEntity;
+    }
+
+    public bool GetCanInteract()
+    {
+        return canInteract;
+    }
+
+    public GameObject GetlastEdibleGameObject()
+    {
+        return lastEdibleGameObject;
+    }
+
+    public bool GetCanPickup()
+    {
+        return canPickup;
+    }
 }

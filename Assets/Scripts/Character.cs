@@ -16,6 +16,11 @@ public class Character : MonoBehaviour
 
     public void Start()
     {
+        
     }
 
+    public void ChangeSize(float growthRate)
+    {
+        transform.localScale = new Vector3(transform.localScale.x + growthRate, transform.localScale.y + growthRate, transform.localScale.y + growthRate);
+    }
 }
