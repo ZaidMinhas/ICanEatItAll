@@ -1,8 +1,5 @@
 using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 
 public enum NPCState
@@ -18,7 +15,6 @@ public class NPCMovement : MonoBehaviour
     private List<Vector3> patrolPoints = new();
     private Vector3 currentPoint;
     private int currentPointID = 0;
-    private Vector3 targetPosition;
     private UnityEngine.AI.NavMeshAgent agent;
 
     public NPCState currentState;
@@ -27,6 +23,13 @@ public class NPCMovement : MonoBehaviour
     void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
+        if (agent == null || !agent.isOnNavMesh)
+        {
+            Debug.LogWarning("NPC needs a NavMeshAgent placed on a baked NavMesh.", this);
+            enabled = false;
+            return;
+        }
 
         if (currentState == NPCState.Patrol)
         {
@@ -37,6 +40,13 @@ public class NPCMovement : MonoBehaviour
                 // Debug.Log(child.gameObject.name);
             }
             // Debug.Log(patrolPoints);
+
+            if (patrolPoints.Count == 0)
+            {
+                Debug.LogWarning("NPC needs at least one patrol point.", this);
+                enabled = false;
+                return;
+            }
 
             currentPoint = patrolPoints[0];
             // Debug.Log(currentPoint);
@@ -52,19 +62,17 @@ public class NPCMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Destination reached
-        if(Vector3.Distance(transform.position, targetPosition) < 0.5)
+        // Wait until the agent has calculated its route to the actual patrol point.
+        if (currentState != NPCState.Patrol || !agent.isOnNavMesh || agent.pathPending)
         {
-            Debug.Log("At Destination");
-            
-            switch (currentState)
-            {
-                case NPCState.Patrol:
-                    // Go to next point
-                    MoveToNextPoint();
-                    break;
-            }
-            
+            return;
+        }
+
+        // Remaining distance follows the path and ignores the NPC's height offset.
+        if (agent.pathStatus == UnityEngine.AI.NavMeshPathStatus.PathComplete &&
+            agent.remainingDistance <= Mathf.Max(0.5f, agent.stoppingDistance))
+        {
+            MoveToNextPoint();
         }
     }
 
