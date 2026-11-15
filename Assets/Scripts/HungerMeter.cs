@@ -86,6 +86,10 @@ public class HungerMeter : MonoBehaviour
     {
         switch (currState)
         {
+            case HungerState.Death:
+                GameState gameState = GetComponent<GameState>();
+                if (gameState != null) gameState.Lose();
+                return;
             case HungerState.Rest:
                 if (IntLevel <= 0)
                 {
