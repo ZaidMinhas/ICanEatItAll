@@ -3,10 +3,12 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public enum NPCState { Patrol, Flee, FindFood }
+public enum NPCRole { Server, Stealer }
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class NPCMovement : MonoBehaviour
 {
+    [SerializeField] private NPCRole role = NPCRole.Server;
     public NPCState currentState;
     public Transform player;
     [Min(0.1f)] public float fleeDistance = 5f;
@@ -15,8 +17,15 @@ public class NPCMovement : MonoBehaviour
 
     private NavMeshAgent agent;
     private GameObject targetFood;
+    private bool isInFleeDistance = false;
+    private bool hasGrabbedFood = false;
+    private GameObject foodGrabbed;
+    [SerializeField] private GameObject[] spawnableFoods = {};
+    [SerializeField] private float foodOffset = 0.5f;
+    [SerializeField] private float handsHeight = 0.8f;
     private int patrolIndex;
     private NPCState previousState;
+    private Vector3 lastValidPosition;
 
     void Start()
     {
@@ -28,12 +37,26 @@ public class NPCMovement : MonoBehaviour
         }
         // Child objects mark the patrol positions when the game starts.
         foreach (Transform point in transform) patrolPoints.Add(point.position);
+
+        if (role == NPCRole.Stealer) currentState = NPCState.FindFood;
+        else currentState = NPCState.Patrol;
     }
 
     void Update()
     {
-        if (!agent.isOnNavMesh) return;
+        if (!agent.isOnNavMesh)
+        {
+            Debug.Log("Agent is not on NavMesh");
+            return;
+        }
+        // else
+        // {
+        //     // agent.ResetPath();
+        // }
         ChooseState();
+        
+        // Debug.Log("Current State: " + currentState);
+        // Debug.Log("hasGrabbedFood:" + hasGrabbedFood);
 
         // Forget the old destination when choosing a different state.
         if (currentState != previousState)
@@ -49,6 +72,14 @@ public class NPCMovement : MonoBehaviour
             case NPCState.Patrol: Patrol(); break;
             case NPCState.Flee: Flee(); break;
             case NPCState.FindFood: FindFood(); break;
+        }
+    }
+
+    void LateUpdate()
+    {
+        if (hasGrabbedFood && foodGrabbed != null)
+        {
+            foodGrabbed.transform.position = new Vector3(transform.position.x + foodOffset * transform.forward.x, transform.position.y + foodOffset * transform.forward.y + handsHeight, transform.position.z + foodOffset * transform.forward.z);
         }
     }
 
@@ -70,16 +101,58 @@ public class NPCMovement : MonoBehaviour
 
         bool hasFood = targetFood != null && targetFood.activeInHierarchy;
         if (!hasFood) hasFood = FindClosestFood() != null;
-        currentState = hasFood ? NPCState.FindFood : NPCState.Patrol;
+        if (role == NPCRole.Stealer)
+        {
+            if (hasGrabbedFood == true)
+            {
+                Vector3 away = transform.position - player.position;
+                away.y = 0;
+                if (away.magnitude >= fleeDistance)
+                {
+                    agent.ResetPath();
+                    isInFleeDistance = false;
+                    currentState = NPCState.Flee;
+                    return;
+                }
+                else
+                {
+                    isInFleeDistance = true;
+                }
+                Debug.Log("isInFleeDistance: " + isInFleeDistance);
+                
+                if (isInFleeDistance)
+                {
+                    currentState = NPCState.Flee;
+                }
+                else currentState = NPCState.Patrol;
+            }
+            else if (hasFood == true)
+            {
+                currentState = NPCState.FindFood;
+            }
+            else
+            {
+                currentState = NPCState.Patrol;
+            }
+        }
+        else
+        {
+            currentState = NPCState.Patrol;
+        }
     }
 
     void Patrol()
     {
         if (patrolPoints.Count == 0) return;
 
+        // Destination reached
         if (agent.hasPath && !agent.pathPending && agent.pathStatus == NavMeshPathStatus.PathComplete &&
             agent.remainingDistance <= Mathf.Max(0.5f, agent.stoppingDistance))
         {
+            // Spawn Food
+            if (role == NPCRole.Server) { SpawnFood(); }
+
+            // Go to next point
             patrolIndex++;
             if (patrolIndex == patrolPoints.Count) patrolIndex = 0;
         }
@@ -88,11 +161,19 @@ public class NPCMovement : MonoBehaviour
 
     void Flee()
     {
-        if (player == null) { agent.ResetPath(); return; }
+        // Debug.Log("Flee");
+        if (player == null) { agent.ResetPath(); Debug.Log("No Player"); return;}
 
         Vector3 away = transform.position - player.position;
         away.y = 0;
-        if (away.magnitude >= fleeDistance) { agent.ResetPath(); return; }
+        if (away.magnitude >= fleeDistance)
+        {
+            agent.ResetPath();
+            isInFleeDistance = false;
+            return;
+        }
+        else isInFleeDistance = true;
+        Debug.Log("isInFleeDistance: " + isInFleeDistance);
         if (away == Vector3.zero) away = transform.forward;
 
         // Choose walkable ground away from the player.
@@ -125,11 +206,15 @@ public class NPCMovement : MonoBehaviour
         if (agent.remainingDistance <= stealingDistance &&
             Vector3.Distance(transform.position, targetFood.transform.position) <= stealingDistance)
         {
-            targetFood.SetActive(false);
+            // targetFood.SetActive(false);
+            // Destroy(targetFood);
+            // agent.ResetPath();
+            hasGrabbedFood = true;
             GameSounds.Play("Steal", transform.position);
-            Destroy(targetFood);
+            foodGrabbed = targetFood;
             targetFood = null;
             agent.ResetPath();
+            currentState = NPCState.Flee;
         }
     }
 
@@ -153,5 +238,11 @@ public class NPCMovement : MonoBehaviour
             closestDistance = distance;
         }
         return closest;
+    }
+
+    void SpawnFood()
+    {
+        int itemID = Random.Range(0, spawnableFoods.Length -1);
+        Instantiate(spawnableFoods[itemID], patrolPoints[patrolIndex], Quaternion.identity);
     }
 }

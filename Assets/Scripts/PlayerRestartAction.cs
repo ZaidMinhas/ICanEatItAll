@@ -16,6 +16,7 @@ public class PlayerRestartAction : MonoBehaviour
         if (hungerMeter.CurrentState == HungerState.Death)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Time.timeScale = 1;
         }
     }
 }
