@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b60431b3fedc24693806ad19c06ff0, type: 3}
+  m_Name: Eat
+  m_EditorClassIdentifier:
+  clips:
+  - {fileID: 8300000, guid: d1e79f6bf8604245a1e28f8942ea992c, type: 3}
+  - {fileID: 8300000, guid: fb21a160fb83432cb0c2912b43936498, type: 3}
+  - {fileID: 8300000, guid: a3902bd5326b4d9bab9d02c73f3dd834, type: 3}
+  category: 1
+  volume: 0.8
+  minPitch: 1
+  maxPitch: 1
+  loop: 0
+  spatial: 0
+  minDistance: 1
+  maxDistance: 30

@@ -41,6 +41,7 @@ public class NPCMovement : MonoBehaviour
             agent.ResetPath();
             targetFood = null;
             previousState = currentState;
+            if (currentState == NPCState.Flee) GameSounds.Play("Flee", transform.position);
         }
 
         switch (currentState)
@@ -125,6 +126,7 @@ public class NPCMovement : MonoBehaviour
             Vector3.Distance(transform.position, targetFood.transform.position) <= stealingDistance)
         {
             targetFood.SetActive(false);
+            GameSounds.Play("Steal", transform.position);
             Destroy(targetFood);
             targetFood = null;
             agent.ResetPath();

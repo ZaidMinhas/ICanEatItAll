@@ -106,6 +106,7 @@ public class HungerMeter : MonoBehaviour
             case HungerState.Growing:
                 targetLevel += heldItem.nourishment;
                 growthRate = Mathf.Max(growthRate, heldItem.growthRate * Time.fixedDeltaTime);
+                GameSounds.Play("Grow");
                 if (isDebug)
                 {
                     Debug.Log("State: " + HungerState.Growing + "Target Level:" + targetLevel + ", GrowthRate: " + growthRate);
